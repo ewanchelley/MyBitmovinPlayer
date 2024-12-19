@@ -14,19 +14,34 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            let player = bmPlayer()
             VideoPlayerView(
-                player: a()
+                player: player
             )
+            .onReceive(player.events.on(PlayerEvent.self)) { (event: PlayerEvent) in
+                dump(event, name: "[Player Event]", maxDepth: 1)
+            }
+            .onReceive(player.events.on(SourceEvent.self)) { (event: SourceEvent) in
+                dump(event, name: "[Source Event]", maxDepth: 1)
+            }
         }
         .padding()
     }
     
-    func a() -> Player {
-        let player = PlayerFactory.create()
-        //let playerView = PlayerView(player: player, frame: .zero)
-         
-        let sourceConfig = SourceConfig(url: URL(filePath: "https://vod-hls-uk-live.akamaized.net/usp/auth/vod/piff_abr_full_hd/9c1b5c-m00255fg/vf_m00255fg_66642f31-0b19-481c-bafe-a1d8b4435733.ism/mobile_wifi_main_sd_abr_v2_hls_master.m3u8?__gda__=1734628758_2a51a0733a6624dd169748b69df2690a")!, type: .hls)
-        player.load(sourceConfig: sourceConfig)
+    func bmPlayer() -> Player {
+        let player = PlayerFactory.createPlayer()
+        
+        guard let streamUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"),
+                     let posterUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/poster.jpg") else {
+                   fatalError("Invalid URL")
+               }
+        
+        let sourceConfig = SourceConfig(url: streamUrl, type: .hls)
+        sourceConfig.posterSource = posterUrl
+        
+        let source = SourceFactory.createSource(from: sourceConfig)
+        
+        player.load(source: source)
         
         return player
     }
