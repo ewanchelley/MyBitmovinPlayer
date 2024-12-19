@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AD8DE1EA136DC9C0A8E5DB0B /* Pods_MyBitmovinPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AEBB47C449595580872BCA /* Pods_MyBitmovinPlayer.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C94FEA4B2D12EE7200C187FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,15 +27,45 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C94FEAD42D131EA000C187FF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4E2A49D6EC6AE1F0F72F54DD /* Pods-MyBitmovinPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBitmovinPlayer.release.xcconfig"; path = "Target Support Files/Pods-MyBitmovinPlayer/Pods-MyBitmovinPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		7A98DC21148477B8C1B066DE /* Pods-MyBitmovinPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBitmovinPlayer.debug.xcconfig"; path = "Target Support Files/Pods-MyBitmovinPlayer/Pods-MyBitmovinPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		C7AEBB47C449595580872BCA /* Pods_MyBitmovinPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyBitmovinPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94FEA392D12EE7100C187FF /* MyBitmovinPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBitmovinPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94FEA4A2D12EE7200C187FF /* MyBitmovinPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBitmovinPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94FEA542D12EE7200C187FF /* MyBitmovinPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBitmovinPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C94FEAD12D131EA000C187FF /* BitmovinPlayer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BitmovinPlayer.xcframework; path = Pods/BitmovinPlayer/BitmovinPlayer.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C94FEAD62D13202400C187FF /* Exceptions for "MyBitmovinPlayer" folder in "MyBitmovinPlayer" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C94FEA382D12EE7100C187FF /* MyBitmovinPlayer */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C94FEA3B2D12EE7100C187FF /* MyBitmovinPlayer */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C94FEAD62D13202400C187FF /* Exceptions for "MyBitmovinPlayer" folder in "MyBitmovinPlayer" target */,
+			);
 			path = MyBitmovinPlayer;
 			sourceTree = "<group>";
 		};
@@ -52,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD8DE1EA136DC9C0A8E5DB0B /* Pods_MyBitmovinPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89769BC143AEA3AFF9ED69B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C94FEAD12D131EA000C187FF /* BitmovinPlayer.xcframework */,
+				C7AEBB47C449595580872BCA /* Pods_MyBitmovinPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C94FEA302D12EE7100C187FF = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +123,8 @@
 				C94FEA4D2D12EE7200C187FF /* MyBitmovinPlayerTests */,
 				C94FEA572D12EE7200C187FF /* MyBitmovinPlayerUITests */,
 				C94FEA3A2D12EE7100C187FF /* Products */,
+				FD3C1ECC97D2F5785E6D18D8 /* Pods */,
+				89769BC143AEA3AFF9ED69B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +138,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FD3C1ECC97D2F5785E6D18D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A98DC21148477B8C1B066DE /* Pods-MyBitmovinPlayer.debug.xcconfig */,
+				4E2A49D6EC6AE1F0F72F54DD /* Pods-MyBitmovinPlayer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +154,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C94FEA5E2D12EE7200C187FF /* Build configuration list for PBXNativeTarget "MyBitmovinPlayer" */;
 			buildPhases = (
+				5D2CFB4ACE935DC5FEA375D4 /* [CP] Check Pods Manifest.lock */,
 				C94FEA352D12EE7100C187FF /* Sources */,
 				C94FEA362D12EE7100C187FF /* Frameworks */,
 				C94FEA372D12EE7100C187FF /* Resources */,
+				F8ED5B89C431B1692601E7D3 /* [CP] Embed Pods Frameworks */,
+				C94FEAD42D131EA000C187FF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -111,8 +169,6 @@
 				C94FEA3B2D12EE7100C187FF /* MyBitmovinPlayer */,
 			);
 			name = MyBitmovinPlayer;
-			packageProductDependencies = (
-			);
 			productName = MyBitmovinPlayer;
 			productReference = C94FEA392D12EE7100C187FF /* MyBitmovinPlayer.app */;
 			productType = "com.apple.product-type.application";
@@ -134,8 +190,6 @@
 				C94FEA4D2D12EE7200C187FF /* MyBitmovinPlayerTests */,
 			);
 			name = MyBitmovinPlayerTests;
-			packageProductDependencies = (
-			);
 			productName = MyBitmovinPlayerTests;
 			productReference = C94FEA4A2D12EE7200C187FF /* MyBitmovinPlayerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,8 +211,6 @@
 				C94FEA572D12EE7200C187FF /* MyBitmovinPlayerUITests */,
 			);
 			name = MyBitmovinPlayerUITests;
-			packageProductDependencies = (
-			);
 			productName = MyBitmovinPlayerUITests;
 			productReference = C94FEA542D12EE7200C187FF /* MyBitmovinPlayerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -230,6 +282,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D2CFB4ACE935DC5FEA375D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyBitmovinPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8ED5B89C431B1692601E7D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyBitmovinPlayer/Pods-MyBitmovinPlayer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyBitmovinPlayer/Pods-MyBitmovinPlayer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyBitmovinPlayer/Pods-MyBitmovinPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C94FEA352D12EE7100C187FF /* Sources */ = {
@@ -385,6 +479,7 @@
 		};
 		C94FEA5F2D12EE7200C187FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A98DC21148477B8C1B066DE /* Pods-MyBitmovinPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -395,7 +490,19 @@
 				DEVELOPMENT_TEAM = PPH9EJ7977;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"\"${PODS_ROOT}/BitmovinAnalyticsCollector\"/**",
+					"\"${PODS_ROOT}/BitmovinPlayer\"/**",
+					"\"${PODS_ROOT}/BitmovinPlayerCore\"/**",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinAnalyticsCollector/BitmovinPlayer\"/**",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinAnalyticsCollector/Core\"/**",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayer\"/**",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayerCore\"/**",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyBitmovinPlayer/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -424,6 +531,7 @@
 		};
 		C94FEA602D12EE7200C187FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E2A49D6EC6AE1F0F72F54DD /* Pods-MyBitmovinPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -434,7 +542,9 @@
 				DEVELOPMENT_TEAM = PPH9EJ7977;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyBitmovinPlayer/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

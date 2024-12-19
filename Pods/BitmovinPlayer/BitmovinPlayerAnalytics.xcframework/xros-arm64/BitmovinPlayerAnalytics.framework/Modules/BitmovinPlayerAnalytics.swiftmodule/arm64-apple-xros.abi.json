@@ -1,0 +1,2031 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics"
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "_InternalPlayerAnalyticsFactory",
+        "printedName": "_InternalPlayerAnalyticsFactory",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(integrationLanguage:playerConfig:analyticsConfig:defaultMetadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_IntegrationLanguage",
+                "printedName": "BitmovinPlayerCore._IntegrationLanguage",
+                "usr": "c:_BMPIntegrationLanguage.h@T@_BMPIntegrationLanguage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlayerConfig",
+                "printedName": "BitmovinPlayerCore.PlayerConfig",
+                "usr": "c:@M@BitmovinPlayerCore@objc(cs)BMPPlayerConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsConfig",
+                "printedName": "CoreCollector.AnalyticsConfig",
+                "usr": "c:@M@CoreCollector@objc(cs)BMAAnalyticsConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DefaultMetadata",
+                "printedName": "CoreCollector.DefaultMetadata",
+                "usr": "c:@M@CoreCollector@objc(cs)BMADefaultMetadata"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinPlayerAnalytics@objc(cs)_BPAInternalPlayerAnalyticsFactory(cm)createWithIntegrationLanguage:playerConfig:analyticsConfig:defaultMetadata:",
+            "mangledName": "$s23BitmovinPlayerAnalytics09_InternalbC7FactoryC6create19integrationLanguage12playerConfig09analyticsJ015defaultMetadataSo9BMPPlayer_pSo015_BMPIntegrationH0a_0aB4Core0bJ0C0P9Collector0cJ0CAO07DefaultM0CtFZ",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_InternalPlayerAnalyticsFactory",
+                "printedName": "BitmovinPlayerAnalytics._InternalPlayerAnalyticsFactory",
+                "usr": "c:@M@BitmovinPlayerAnalytics@objc(cs)_BPAInternalPlayerAnalyticsFactory"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BitmovinPlayerAnalytics@objc(cs)_BPAInternalPlayerAnalyticsFactory(im)init",
+            "mangledName": "$s23BitmovinPlayerAnalytics09_InternalbC7FactoryCACycfc",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BitmovinPlayerAnalytics@objc(cs)_BPAInternalPlayerAnalyticsFactory",
+        "mangledName": "$s23BitmovinPlayerAnalytics09_InternalbC7FactoryC",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "objc_name": "_BPAInternalPlayerAnalyticsFactory",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "ObjCMembers"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinCollector",
+        "printedName": "BitmovinCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlayerAnalyticsApi",
+        "printedName": "PlayerAnalyticsApi",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "impressionId",
+            "printedName": "impressionId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAPlayerAnalyticsApi(py)impressionId",
+            "mangledName": "$s23BitmovinPlayerAnalytics0bC3ApiP12impressionIdSSSgvp",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAPlayerAnalyticsApi(im)impressionId",
+                "mangledName": "$s23BitmovinPlayerAnalytics0bC3ApiP12impressionIdSSSgvg",
+                "moduleName": "BitmovinPlayerAnalytics",
+                "genericSig": "<τ_0_0 where τ_0_0 : BitmovinPlayerAnalytics.PlayerAnalyticsApi>",
+                "sugared_genericSig": "<Self where Self : BitmovinPlayerAnalytics.PlayerAnalyticsApi>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userId",
+            "printedName": "userId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAPlayerAnalyticsApi(py)userId",
+            "mangledName": "$s23BitmovinPlayerAnalytics0bC3ApiP6userIdSSvp",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAPlayerAnalyticsApi(im)userId",
+                "mangledName": "$s23BitmovinPlayerAnalytics0bC3ApiP6userIdSSvg",
+                "moduleName": "BitmovinPlayerAnalytics",
+                "genericSig": "<τ_0_0 where τ_0_0 : BitmovinPlayerAnalytics.PlayerAnalyticsApi>",
+                "sugared_genericSig": "<Self where Self : BitmovinPlayerAnalytics.PlayerAnalyticsApi>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ssai",
+            "printedName": "ssai",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsSsaiApi",
+                "printedName": "any BitmovinPlayerAnalytics.AnalyticsSsaiApi",
+                "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAAnalyticsSsaiApi"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAPlayerAnalyticsApi(py)ssai",
+            "mangledName": "$s23BitmovinPlayerAnalytics0bC3ApiP4ssaiAA0c4SsaiD0_pvp",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnalyticsSsaiApi",
+                    "printedName": "any BitmovinPlayerAnalytics.AnalyticsSsaiApi",
+                    "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAAnalyticsSsaiApi"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAPlayerAnalyticsApi(im)ssai",
+                "mangledName": "$s23BitmovinPlayerAnalytics0bC3ApiP4ssaiAA0c4SsaiD0_pvg",
+                "moduleName": "BitmovinPlayerAnalytics",
+                "genericSig": "<τ_0_0 where τ_0_0 : BitmovinPlayerAnalytics.PlayerAnalyticsApi>",
+                "sugared_genericSig": "<Self where Self : BitmovinPlayerAnalytics.PlayerAnalyticsApi>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "sendCustomDataEvent",
+            "printedName": "sendCustomDataEvent(customData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CustomData",
+                "printedName": "CoreCollector.CustomData",
+                "usr": "c:@M@CoreCollector@objc(cs)BMACustomData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAPlayerAnalyticsApi(im)sendCustomDataEventWithCustomData:",
+            "mangledName": "$s23BitmovinPlayerAnalytics0bC3ApiP19sendCustomDataEvent06customG0y13CoreCollector0fG0C_tF",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "genericSig": "<τ_0_0 where τ_0_0 : BitmovinPlayerAnalytics.PlayerAnalyticsApi>",
+            "sugared_genericSig": "<Self where Self : BitmovinPlayerAnalytics.PlayerAnalyticsApi>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAPlayerAnalyticsApi",
+        "mangledName": "$s23BitmovinPlayerAnalytics0bC3ApiP",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "genericSig": "<τ_0_0 : AnyObject, τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : AnyObject, Self : Swift.Sendable>",
+        "objc_name": "BPAPlayerAnalyticsApi",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinCollector",
+        "printedName": "BitmovinCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlayerAnalyticsApiAccessor",
+        "printedName": "PlayerAnalyticsApiAccessor",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "from",
+            "printedName": "from(player:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any BitmovinPlayerAnalytics.PlayerAnalyticsApi)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlayerAnalyticsApi",
+                    "printedName": "any BitmovinPlayerAnalytics.PlayerAnalyticsApi",
+                    "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAPlayerAnalyticsApi"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinPlayerAnalytics@objc(cs)BPAPlayerAnalyticsApiAccessor(cm)fromPlayer:",
+            "mangledName": "$s23BitmovinPlayerAnalytics0bC11ApiAccessorC4from6playerAA0bcD0_pSgSo9BMPPlayer_p_tFZ",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BitmovinPlayerAnalytics@objc(cs)BPAPlayerAnalyticsApiAccessor",
+        "mangledName": "$s23BitmovinPlayerAnalytics0bC11ApiAccessorC",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "objc_name": "BPAPlayerAnalyticsApiAccessor",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "ObjCMembers",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SourceAnalyticsApiAccessor",
+        "printedName": "SourceAnalyticsApiAccessor",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "from",
+            "printedName": "from(source:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any BitmovinPlayerAnalytics.SourceAnalyticsApi)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SourceAnalyticsApi",
+                    "printedName": "any BitmovinPlayerAnalytics.SourceAnalyticsApi",
+                    "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPASourceAnalyticsApi"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "any BitmovinPlayerCore.Source",
+                "usr": "c:@M@BitmovinPlayerCore@objc(pl)BMPSource"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinPlayerAnalytics@objc(cs)BPASourceAnalyticsApiAccessor(cm)fromSource:",
+            "mangledName": "$s23BitmovinPlayerAnalytics06SourceC11ApiAccessorC4from6sourceAA0dcE0_pSg0aB4Core0D0_p_tFZ",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BitmovinPlayerAnalytics@objc(cs)BPASourceAnalyticsApiAccessor",
+        "mangledName": "$s23BitmovinPlayerAnalytics06SourceC11ApiAccessorC",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "objc_name": "BPASourceAnalyticsApiAccessor",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "ObjCMembers",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnalyticsSsaiApi",
+        "printedName": "AnalyticsSsaiApi",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "adBreakStart",
+            "printedName": "adBreakStart()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAAnalyticsSsaiApi(im)adBreakStart",
+            "mangledName": "$s23BitmovinPlayerAnalytics0C7SsaiApiP12adBreakStartyyF",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "genericSig": "<τ_0_0 where τ_0_0 : BitmovinPlayerAnalytics.AnalyticsSsaiApi>",
+            "sugared_genericSig": "<Self where Self : BitmovinPlayerAnalytics.AnalyticsSsaiApi>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adBreakStart",
+            "printedName": "adBreakStart(adBreakMetadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SsaiAdBreakMetadata",
+                "printedName": "CoreCollector.SsaiAdBreakMetadata",
+                "usr": "c:@M@CoreCollector@objc(cs)BMASsaiAdBreakMetadata"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAAnalyticsSsaiApi(im)adBreakStartWithAdBreakMetadata:",
+            "mangledName": "$s23BitmovinPlayerAnalytics0C7SsaiApiP12adBreakStart0fG8Metadatay13CoreCollector0d2AdgI0C_tF",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "genericSig": "<τ_0_0 where τ_0_0 : BitmovinPlayerAnalytics.AnalyticsSsaiApi>",
+            "sugared_genericSig": "<Self where Self : BitmovinPlayerAnalytics.AnalyticsSsaiApi>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adStart",
+            "printedName": "adStart()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAAnalyticsSsaiApi(im)adStart",
+            "mangledName": "$s23BitmovinPlayerAnalytics0C7SsaiApiP7adStartyyF",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "genericSig": "<τ_0_0 where τ_0_0 : BitmovinPlayerAnalytics.AnalyticsSsaiApi>",
+            "sugared_genericSig": "<Self where Self : BitmovinPlayerAnalytics.AnalyticsSsaiApi>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adStart",
+            "printedName": "adStart(adMetadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SsaiAdMetadata",
+                "printedName": "CoreCollector.SsaiAdMetadata",
+                "usr": "c:@M@CoreCollector@objc(cs)BMASsaiAdMetadata"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAAnalyticsSsaiApi(im)adStartWithAdMetadata:",
+            "mangledName": "$s23BitmovinPlayerAnalytics0C7SsaiApiP7adStart0F8Metadatay13CoreCollector0d2AdH0C_tF",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "genericSig": "<τ_0_0 where τ_0_0 : BitmovinPlayerAnalytics.AnalyticsSsaiApi>",
+            "sugared_genericSig": "<Self where Self : BitmovinPlayerAnalytics.AnalyticsSsaiApi>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adBreakEnd",
+            "printedName": "adBreakEnd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAAnalyticsSsaiApi(im)adBreakEnd",
+            "mangledName": "$s23BitmovinPlayerAnalytics0C7SsaiApiP10adBreakEndyyF",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "genericSig": "<τ_0_0 where τ_0_0 : BitmovinPlayerAnalytics.AnalyticsSsaiApi>",
+            "sugared_genericSig": "<Self where Self : BitmovinPlayerAnalytics.AnalyticsSsaiApi>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adQuartileFinished",
+            "printedName": "adQuartileFinished(adQuartile:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SsaiAdQuartile",
+                "printedName": "CoreCollector.SsaiAdQuartile",
+                "usr": "c:@M@CoreCollector@E@BMASsaiAdQuartile"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAAnalyticsSsaiApi(im)adQuartileFinishedWithAdQuartile:",
+            "mangledName": "$s23BitmovinPlayerAnalytics0C7SsaiApiP18adQuartileFinished0fG0y13CoreCollector0d2AdG0O_tF",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "genericSig": "<τ_0_0 where τ_0_0 : BitmovinPlayerAnalytics.AnalyticsSsaiApi>",
+            "sugared_genericSig": "<Self where Self : BitmovinPlayerAnalytics.AnalyticsSsaiApi>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adQuartileFinished",
+            "printedName": "adQuartileFinished(adQuartile:adQuartileMetadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SsaiAdQuartile",
+                "printedName": "CoreCollector.SsaiAdQuartile",
+                "usr": "c:@M@CoreCollector@E@BMASsaiAdQuartile"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SsaiAdQuartileMetadata",
+                "printedName": "CoreCollector.SsaiAdQuartileMetadata",
+                "usr": "c:@M@CoreCollector@objc(cs)BMASsaiAdQuartileMetadata"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAAnalyticsSsaiApi(im)adQuartileFinishedWithAdQuartile:adQuartileMetadata:",
+            "mangledName": "$s23BitmovinPlayerAnalytics0C7SsaiApiP18adQuartileFinished0fG00fG8Metadatay13CoreCollector0d2AdG0O_AG0dlgI0CtF",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "genericSig": "<τ_0_0 where τ_0_0 : BitmovinPlayerAnalytics.AnalyticsSsaiApi>",
+            "sugared_genericSig": "<Self where Self : BitmovinPlayerAnalytics.AnalyticsSsaiApi>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAAnalyticsSsaiApi",
+        "mangledName": "$s23BitmovinPlayerAnalytics0C7SsaiApiP",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "genericSig": "<τ_0_0 : AnyObject, τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : AnyObject, Self : Swift.Sendable>",
+        "objc_name": "BPAAnalyticsSsaiApi",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnalyticsPlayerConfig",
+        "printedName": "AnalyticsPlayerConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "enabled",
+            "printedName": "enabled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BitmovinPlayerAnalytics.AnalyticsPlayerConfig.Type) -> (CoreCollector.AnalyticsConfig, CoreCollector.DefaultMetadata) -> BitmovinPlayerAnalytics.AnalyticsPlayerConfig",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CoreCollector.AnalyticsConfig, CoreCollector.DefaultMetadata) -> BitmovinPlayerAnalytics.AnalyticsPlayerConfig",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnalyticsPlayerConfig",
+                        "printedName": "BitmovinPlayerAnalytics.AnalyticsPlayerConfig",
+                        "usr": "s:23BitmovinPlayerAnalytics0cB6ConfigO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(analyticsConfig: CoreCollector.AnalyticsConfig, defaultMetadata: CoreCollector.DefaultMetadata)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AnalyticsConfig",
+                            "printedName": "CoreCollector.AnalyticsConfig",
+                            "usr": "c:@M@CoreCollector@objc(cs)BMAAnalyticsConfig"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DefaultMetadata",
+                            "printedName": "CoreCollector.DefaultMetadata",
+                            "usr": "c:@M@CoreCollector@objc(cs)BMADefaultMetadata"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BitmovinPlayerAnalytics.AnalyticsPlayerConfig.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnalyticsPlayerConfig",
+                        "printedName": "BitmovinPlayerAnalytics.AnalyticsPlayerConfig",
+                        "usr": "s:23BitmovinPlayerAnalytics0cB6ConfigO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23BitmovinPlayerAnalytics0cB6ConfigO7enabledyAC13CoreCollector0cD0C_AE15DefaultMetadataCtcACmF",
+            "mangledName": "$s23BitmovinPlayerAnalytics0cB6ConfigO7enabledyAC13CoreCollector0cD0C_AE15DefaultMetadataCtcACmF",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "disabled",
+            "printedName": "disabled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BitmovinPlayerAnalytics.AnalyticsPlayerConfig.Type) -> BitmovinPlayerAnalytics.AnalyticsPlayerConfig",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnalyticsPlayerConfig",
+                    "printedName": "BitmovinPlayerAnalytics.AnalyticsPlayerConfig",
+                    "usr": "s:23BitmovinPlayerAnalytics0cB6ConfigO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BitmovinPlayerAnalytics.AnalyticsPlayerConfig.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnalyticsPlayerConfig",
+                        "printedName": "BitmovinPlayerAnalytics.AnalyticsPlayerConfig",
+                        "usr": "s:23BitmovinPlayerAnalytics0cB6ConfigO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23BitmovinPlayerAnalytics0cB6ConfigO8disabledyA2CmF",
+            "mangledName": "$s23BitmovinPlayerAnalytics0cB6ConfigO8disabledyA2CmF",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "enabled",
+            "printedName": "enabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsPlayerConfig",
+                "printedName": "BitmovinPlayerAnalytics.AnalyticsPlayerConfig",
+                "usr": "s:23BitmovinPlayerAnalytics0cB6ConfigO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23BitmovinPlayerAnalytics0cB6ConfigO7enabledACvpZ",
+            "mangledName": "$s23BitmovinPlayerAnalytics0cB6ConfigO7enabledACvpZ",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnalyticsPlayerConfig",
+                    "printedName": "BitmovinPlayerAnalytics.AnalyticsPlayerConfig",
+                    "usr": "s:23BitmovinPlayerAnalytics0cB6ConfigO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23BitmovinPlayerAnalytics0cB6ConfigO7enabledACvgZ",
+                "mangledName": "$s23BitmovinPlayerAnalytics0cB6ConfigO7enabledACvgZ",
+                "moduleName": "BitmovinPlayerAnalytics",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:23BitmovinPlayerAnalytics0cB6ConfigO",
+        "mangledName": "$s23BitmovinPlayerAnalytics0cB6ConfigO",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinCollector",
+        "printedName": "BitmovinCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "Exported",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "Exported"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics"
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics"
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics"
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinCollector",
+        "printedName": "BitmovinCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics"
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SourceAnalyticsApi",
+        "printedName": "SourceAnalyticsApi",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "metadata",
+            "printedName": "metadata",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SourceMetadata",
+                "printedName": "CoreCollector.SourceMetadata",
+                "usr": "c:@M@CoreCollector@objc(cs)BMASourceMetadata"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPASourceAnalyticsApi(py)metadata",
+            "mangledName": "$s23BitmovinPlayerAnalytics06SourceC3ApiP8metadata13CoreCollector0D8MetadataCvp",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SourceMetadata",
+                    "printedName": "CoreCollector.SourceMetadata",
+                    "usr": "c:@M@CoreCollector@objc(cs)BMASourceMetadata"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPASourceAnalyticsApi(im)metadata",
+                "mangledName": "$s23BitmovinPlayerAnalytics06SourceC3ApiP8metadata13CoreCollector0D8MetadataCvg",
+                "moduleName": "BitmovinPlayerAnalytics",
+                "genericSig": "<τ_0_0 where τ_0_0 : BitmovinPlayerAnalytics.SourceAnalyticsApi>",
+                "sugared_genericSig": "<Self where Self : BitmovinPlayerAnalytics.SourceAnalyticsApi>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "customData",
+            "printedName": "customData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomData",
+                "printedName": "CoreCollector.CustomData",
+                "usr": "c:@M@CoreCollector@objc(cs)BMACustomData"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPASourceAnalyticsApi(py)customData",
+            "mangledName": "$s23BitmovinPlayerAnalytics06SourceC3ApiP10customData13CoreCollector06CustomG0Cvp",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CustomData",
+                    "printedName": "CoreCollector.CustomData",
+                    "usr": "c:@M@CoreCollector@objc(cs)BMACustomData"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPASourceAnalyticsApi(im)customData",
+                "mangledName": "$s23BitmovinPlayerAnalytics06SourceC3ApiP10customData13CoreCollector06CustomG0Cvg",
+                "moduleName": "BitmovinPlayerAnalytics",
+                "genericSig": "<τ_0_0 where τ_0_0 : BitmovinPlayerAnalytics.SourceAnalyticsApi>",
+                "sugared_genericSig": "<Self where Self : BitmovinPlayerAnalytics.SourceAnalyticsApi>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CustomData",
+                    "printedName": "CoreCollector.CustomData",
+                    "usr": "c:@M@CoreCollector@objc(cs)BMACustomData"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPASourceAnalyticsApi(im)setCustomData:",
+                "mangledName": "$s23BitmovinPlayerAnalytics06SourceC3ApiP10customData13CoreCollector06CustomG0Cvs",
+                "moduleName": "BitmovinPlayerAnalytics",
+                "genericSig": "<τ_0_0 where τ_0_0 : BitmovinPlayerAnalytics.SourceAnalyticsApi>",
+                "sugared_genericSig": "<Self where Self : BitmovinPlayerAnalytics.SourceAnalyticsApi>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPASourceAnalyticsApi",
+        "mangledName": "$s23BitmovinPlayerAnalytics06SourceC3ApiP",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "genericSig": "<τ_0_0 : AnyObject, τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : AnyObject, Self : Swift.Sendable>",
+        "objc_name": "BPASourceAnalyticsApi",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinCollector",
+        "printedName": "BitmovinCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayerAnalytics"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Player",
+        "printedName": "Player",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "analytics",
+            "printedName": "analytics",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any BitmovinPlayerAnalytics.PlayerAnalyticsApi)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlayerAnalyticsApi",
+                    "printedName": "any BitmovinPlayerAnalytics.PlayerAnalyticsApi",
+                    "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAPlayerAnalyticsApi"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So9BMPPlayerP23BitmovinPlayerAnalyticsE9analyticsAC0cD3Api_pSgvp",
+            "mangledName": "$sSo9BMPPlayerP23BitmovinPlayerAnalyticsE9analyticsAC0cD3Api_pSgvp",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any BitmovinPlayerAnalytics.PlayerAnalyticsApi)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PlayerAnalyticsApi",
+                        "printedName": "any BitmovinPlayerAnalytics.PlayerAnalyticsApi",
+                        "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPAPlayerAnalyticsApi"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So9BMPPlayerP23BitmovinPlayerAnalyticsE9analyticsAC0cD3Api_pSgvg",
+                "mangledName": "$sSo9BMPPlayerP23BitmovinPlayerAnalyticsE9analyticsAC0cD3Api_pSgvg",
+                "moduleName": "BitmovinPlayerAnalytics",
+                "genericSig": "<τ_0_0 where τ_0_0 : BitmovinPlayerCore.Player>",
+                "sugared_genericSig": "<Self where Self : BitmovinPlayerCore.Player>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:objc(pl)BMPPlayer",
+        "moduleName": "BitmovinPlayerCore",
+        "genericSig": "<τ_0_0 : BitmovinPlayerCore.PlayerEventHandler, τ_0_0 : BitmovinPlayerCore.RemoteControlApi>",
+        "sugared_genericSig": "<Self : BitmovinPlayerCore.PlayerEventHandler, Self : BitmovinPlayerCore.RemoteControlApi>",
+        "objc_name": "BMPPlayer",
+        "declAttributes": [
+          "RestatedObjCConformance",
+          "ObjC",
+          "SynthesizedProtocol",
+          "Sendable",
+          "Dynamic"
+        ],
+        "isExternal": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SourceFactory",
+        "printedName": "SourceFactory",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(from:sourceMetadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "any BitmovinPlayerCore.Source",
+                "usr": "c:@M@BitmovinPlayerCore@objc(pl)BMPSource"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SourceConfig",
+                "printedName": "BitmovinPlayerCore.SourceConfig",
+                "usr": "c:@M@BitmovinPlayerCore@objc(cs)BMPSourceConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SourceMetadata",
+                "printedName": "CoreCollector.SourceMetadata",
+                "usr": "c:@M@CoreCollector@objc(cs)BMASourceMetadata"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BitmovinPlayerAnalytics@BitmovinPlayerCore@objc(cs)BMPSourceFactory(cm)createFrom:sourceMetadata:",
+            "mangledName": "$s18BitmovinPlayerCore13SourceFactoryC0aB9AnalyticsE6create4from14sourceMetadataAA0D0_pAA0D6ConfigC_0C9Collector0dJ0CtFZ",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "static": true,
+            "deprecated": true,
+            "declAttributes": [
+              "Final",
+              "Available",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createSource",
+            "printedName": "createSource(from:sourceMetadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "any BitmovinPlayerCore.Source",
+                "usr": "c:@M@BitmovinPlayerCore@objc(pl)BMPSource"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SourceConfig",
+                "printedName": "BitmovinPlayerCore.SourceConfig",
+                "usr": "c:@M@BitmovinPlayerCore@objc(cs)BMPSourceConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SourceMetadata",
+                "printedName": "CoreCollector.SourceMetadata",
+                "usr": "c:@M@CoreCollector@objc(cs)BMASourceMetadata"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BitmovinPlayerAnalytics@BitmovinPlayerCore@objc(cs)BMPSourceFactory(cm)createSourceFrom:sourceMetadata:",
+            "mangledName": "$s18BitmovinPlayerCore13SourceFactoryC0aB9AnalyticsE06createD04from14sourceMetadataAA0D0_pAA0D6ConfigC_0C9Collector0dJ0CtFZ",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "static": true,
+            "objc_name": "createSourceFrom:sourceMetadata:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BitmovinPlayerCore@objc(cs)BMPSourceFactory",
+        "mangledName": "$s18BitmovinPlayerCore13SourceFactoryC",
+        "moduleName": "BitmovinPlayerCore",
+        "intro_iOS": "14.0",
+        "intro_tvOS": "14.0",
+        "objc_name": "BMPSourceFactory",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Source",
+        "printedName": "Source",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "analytics",
+            "printedName": "analytics",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any BitmovinPlayerAnalytics.SourceAnalyticsApi)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SourceAnalyticsApi",
+                    "printedName": "any BitmovinPlayerAnalytics.SourceAnalyticsApi",
+                    "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPASourceAnalyticsApi"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BitmovinPlayerCore6SourceP0aB9AnalyticsE9analyticsAD0dE3Api_pSgvp",
+            "mangledName": "$s18BitmovinPlayerCore6SourceP0aB9AnalyticsE9analyticsAD0dE3Api_pSgvp",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any BitmovinPlayerAnalytics.SourceAnalyticsApi)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SourceAnalyticsApi",
+                        "printedName": "any BitmovinPlayerAnalytics.SourceAnalyticsApi",
+                        "usr": "c:@M@BitmovinPlayerAnalytics@objc(pl)BPASourceAnalyticsApi"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BitmovinPlayerCore6SourceP0aB9AnalyticsE9analyticsAD0dE3Api_pSgvg",
+                "mangledName": "$s18BitmovinPlayerCore6SourceP0aB9AnalyticsE9analyticsAD0dE3Api_pSgvg",
+                "moduleName": "BitmovinPlayerAnalytics",
+                "genericSig": "<τ_0_0 where τ_0_0 : BitmovinPlayerCore.Source>",
+                "sugared_genericSig": "<Self where Self : BitmovinPlayerCore.Source>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@BitmovinPlayerCore@objc(pl)BMPSource",
+        "mangledName": "$s18BitmovinPlayerCore6SourceP",
+        "moduleName": "BitmovinPlayerCore",
+        "genericSig": "<τ_0_0 : BitmovinPlayerCore.SourceEventHandler, τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : BitmovinPlayerCore.SourceEventHandler, Self : Swift.Sendable>",
+        "objc_name": "BMPSource",
+        "declAttributes": [
+          "ObjC"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SourceEventHandler",
+            "printedName": "SourceEventHandler",
+            "usr": "c:@M@BitmovinPlayerCore@objc(pl)BMPSourceEventHandler",
+            "mangledName": "$s18BitmovinPlayerCore18SourceEventHandlerP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlayerFactory",
+        "printedName": "PlayerFactory",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "analyticsSdkVersion",
+            "printedName": "analyticsSdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BitmovinPlayerCore0B7FactoryC0aB9AnalyticsE19analyticsSdkVersionSSvpZ",
+            "mangledName": "$s18BitmovinPlayerCore0B7FactoryC0aB9AnalyticsE19analyticsSdkVersionSSvpZ",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BitmovinPlayerCore0B7FactoryC0aB9AnalyticsE19analyticsSdkVersionSSvgZ",
+                "mangledName": "$s18BitmovinPlayerCore0B7FactoryC0aB9AnalyticsE19analyticsSdkVersionSSvgZ",
+                "moduleName": "BitmovinPlayerAnalytics",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(playerConfig:analyticsConfig:defaultMetadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlayerConfig",
+                "printedName": "BitmovinPlayerCore.PlayerConfig",
+                "hasDefaultArg": true,
+                "usr": "c:@M@BitmovinPlayerCore@objc(cs)BMPPlayerConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsConfig",
+                "printedName": "CoreCollector.AnalyticsConfig",
+                "usr": "c:@M@CoreCollector@objc(cs)BMAAnalyticsConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DefaultMetadata",
+                "printedName": "CoreCollector.DefaultMetadata",
+                "hasDefaultArg": true,
+                "usr": "c:@M@CoreCollector@objc(cs)BMADefaultMetadata"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18BitmovinPlayerCore0B7FactoryC0aB9AnalyticsE6create12playerConfig09analyticsH015defaultMetadataSo9BMPPlayer_pAA0bH0C_0C9Collector0eH0CAL07DefaultK0CtFZ",
+            "mangledName": "$s18BitmovinPlayerCore0B7FactoryC0aB9AnalyticsE6create12playerConfig09analyticsH015defaultMetadataSo9BMPPlayer_pAA0bH0C_0C9Collector0eH0CAL07DefaultK0CtFZ",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "static": true,
+            "deprecated": true,
+            "declAttributes": [
+              "Final",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createPlayer",
+            "printedName": "createPlayer(playerConfig:analytics:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlayerConfig",
+                "printedName": "BitmovinPlayerCore.PlayerConfig",
+                "hasDefaultArg": true,
+                "usr": "c:@M@BitmovinPlayerCore@objc(cs)BMPPlayerConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsPlayerConfig",
+                "printedName": "BitmovinPlayerAnalytics.AnalyticsPlayerConfig",
+                "hasDefaultArg": true,
+                "usr": "s:23BitmovinPlayerAnalytics0cB6ConfigO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18BitmovinPlayerCore0B7FactoryC0aB9AnalyticsE06createB012playerConfig9analyticsSo9BMPPlayer_pAA0bH0C_AD0ebH0OtFZ",
+            "mangledName": "$s18BitmovinPlayerCore0B7FactoryC0aB9AnalyticsE06createB012playerConfig9analyticsSo9BMPPlayer_pAA0bH0C_AD0ebH0OtFZ",
+            "moduleName": "BitmovinPlayerAnalytics",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18BitmovinPlayerCore0B7FactoryC",
+        "mangledName": "$s18BitmovinPlayerCore0B7FactoryC",
+        "moduleName": "BitmovinPlayerCore",
+        "intro_iOS": "14.0",
+        "intro_tvOS": "14.0",
+        "declAttributes": [
+          "Available",
+          "Available"
+        ],
+        "isExternal": true,
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ios-ci\/actions-runner-3\/_work\/player-ios\/player-ios\/BitmovinPlayerAnalytics\/BitmovinPlayerAnalytics\/api\/analyticsPlayerConfig\/AnalyticsPlayerConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 931,
+      "length": 10,
+      "value": "\"DEFERRED\""
+    },
+    {
+      "filePath": "\/Users\/ios-ci\/actions-runner-3\/_work\/player-ios\/player-ios\/BitmovinPlayerAnalytics\/BitmovinPlayerAnalytics\/analyticsModule\/player\/DefaultAnalyticsPlayerModule.swift",
+      "kind": "StringLiteral",
+      "offset": 302,
+      "length": 28,
+      "value": "\"BitmovinPlayerAnalytics.DefaultAnalyticsPlayerModule\""
+    },
+    {
+      "filePath": "\/Users\/ios-ci\/actions-runner-3\/_work\/player-ios\/player-ios\/BitmovinPlayerAnalytics\/BitmovinPlayerAnalytics\/analyticsModule\/source\/DefaultAnalyticsSourceModule.swift",
+      "kind": "StringLiteral",
+      "offset": 302,
+      "length": 28,
+      "value": "\"BitmovinPlayerAnalytics.DefaultAnalyticsSourceModule\""
+    }
+  ]
+}

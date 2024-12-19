@@ -1,0 +1,1599 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BitmovinPlayerCollectorFactory",
+        "printedName": "BitmovinPlayerCollectorFactory",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BitmovinPlayerCollectorApi",
+                "printedName": "any BitmovinCollector.BitmovinPlayerCollectorApi",
+                "usr": "c:@M@BitmovinCollector@objc(pl)BMABitmovinPlayerCollectorApi"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsConfig",
+                "printedName": "CoreCollector.AnalyticsConfig",
+                "usr": "c:@M@CoreCollector@objc(cs)BMAAnalyticsConfig"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinCollector@objc(cs)BMABitmovinPlayerCollectorFactory(cm)createWithConfig:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB7FactoryC6create6configAA0acB3Api_p04CoreB015AnalyticsConfigC_tFZ",
+            "moduleName": "BitmovinCollector",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(config:defaultMetadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BitmovinPlayerCollectorApi",
+                "printedName": "any BitmovinCollector.BitmovinPlayerCollectorApi",
+                "usr": "c:@M@BitmovinCollector@objc(pl)BMABitmovinPlayerCollectorApi"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsConfig",
+                "printedName": "CoreCollector.AnalyticsConfig",
+                "usr": "c:@M@CoreCollector@objc(cs)BMAAnalyticsConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DefaultMetadata",
+                "printedName": "CoreCollector.DefaultMetadata",
+                "usr": "c:@M@CoreCollector@objc(cs)BMADefaultMetadata"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinCollector@objc(cs)BMABitmovinPlayerCollectorFactory(cm)createWithConfig:defaultMetadata:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB7FactoryC6create6config15defaultMetadataAA0acB3Api_p04CoreB015AnalyticsConfigC_AH07DefaultH0CtFZ",
+            "moduleName": "BitmovinCollector",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BitmovinPlayerCollectorFactory",
+                "printedName": "BitmovinCollector.BitmovinPlayerCollectorFactory",
+                "usr": "c:@M@BitmovinCollector@objc(cs)BMABitmovinPlayerCollectorFactory"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BitmovinCollector@objc(cs)BMABitmovinPlayerCollectorFactory(im)init",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB7FactoryCACycfc",
+            "moduleName": "BitmovinCollector",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BitmovinCollector@objc(cs)BMABitmovinPlayerCollectorFactory",
+        "mangledName": "$s17BitmovinCollector0a6PlayerB7FactoryC",
+        "moduleName": "BitmovinCollector",
+        "objc_name": "BMABitmovinPlayerCollectorFactory",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "ObjCMembers"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CollectorFactory",
+            "printedName": "CollectorFactory",
+            "usr": "s:13CoreCollector0B7FactoryP",
+            "mangledName": "$s13CoreCollector0B7FactoryP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BitmovinPlayerCollector",
+        "printedName": "BitmovinPlayerCollector",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BitmovinPlayerCollector",
+                "printedName": "BitmovinCollector.BitmovinPlayerCollector",
+                "usr": "c:@M@BitmovinCollector@objc(cs)BitmovinPlayerCollector"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BitmovinAnalyticsConfig",
+                "printedName": "CoreCollector.BitmovinAnalyticsConfig",
+                "usr": "c:@M@CoreCollector@objc(cs)BitmovinAnalyticsConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BitmovinCollector@objc(cs)BitmovinPlayerCollector(im)initWithConfig:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB0C6configAC04CoreB00A15AnalyticsConfigC_tcfc",
+            "moduleName": "BitmovinCollector",
+            "deprecated": true,
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "Available",
+              "ObjC"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BitmovinPlayerCollector",
+                "printedName": "BitmovinCollector.BitmovinPlayerCollector",
+                "usr": "c:@M@BitmovinCollector@objc(cs)BitmovinPlayerCollector"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BitmovinCollector@objc(cs)BitmovinPlayerCollector(im)init",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB0CACycfc",
+            "moduleName": "BitmovinCollector",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "ssai",
+            "printedName": "ssai",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SsaiApi",
+                "printedName": "any CoreCollector.SsaiApi",
+                "usr": "c:@M@CoreCollector@objc(pl)SsaiApi"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@BitmovinCollector@objc(cs)BitmovinPlayerCollector(py)ssai",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB0C4ssai04CoreB07SsaiApi_pvp",
+            "moduleName": "BitmovinCollector",
+            "objc_name": "ssai",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SsaiApi",
+                    "printedName": "any CoreCollector.SsaiApi",
+                    "usr": "c:@M@CoreCollector@objc(pl)SsaiApi"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@BitmovinCollector@objc(cs)BitmovinPlayerCollector(im)ssai",
+                "mangledName": "$s17BitmovinCollector0a6PlayerB0C4ssai04CoreB07SsaiApi_pvg",
+                "moduleName": "BitmovinCollector",
+                "objc_name": "ssai",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userId",
+            "printedName": "userId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@BitmovinCollector@objc(cs)BitmovinPlayerCollector(py)userId",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB0C6userIdSSvp",
+            "moduleName": "BitmovinCollector",
+            "objc_name": "userId",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@BitmovinCollector@objc(cs)BitmovinPlayerCollector(im)userId",
+                "mangledName": "$s17BitmovinCollector0a6PlayerB0C6userIdSSvg",
+                "moduleName": "BitmovinCollector",
+                "objc_name": "userId",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "impressionId",
+            "printedName": "impressionId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@BitmovinCollector@objc(cs)BitmovinPlayerCollector(py)impressionId",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB0C12impressionIdSSSgvp",
+            "moduleName": "BitmovinCollector",
+            "objc_name": "impressionId",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@BitmovinCollector@objc(cs)BitmovinPlayerCollector(im)impressionId",
+                "mangledName": "$s17BitmovinCollector0a6PlayerB0C12impressionIdSSSgvg",
+                "moduleName": "BitmovinCollector",
+                "objc_name": "impressionId",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "attach",
+            "printedName": "attach(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BitmovinCollector@objc(cs)BitmovinPlayerCollector(im)attachTo:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB0C6attach2toySo9BMPPlayer_p_tF",
+            "moduleName": "BitmovinCollector",
+            "objc_name": "attachTo:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "detach",
+            "printedName": "detach()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BitmovinCollector@objc(cs)BitmovinPlayerCollector(im)detach",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB0C6detachyyF",
+            "moduleName": "BitmovinCollector",
+            "objc_name": "detach",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "apply",
+            "printedName": "apply(sourceMetadata:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SourceMetadata",
+                "printedName": "CoreCollector.SourceMetadata",
+                "usr": "c:@M@CoreCollector@objc(cs)BMASourceMetadata"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "any BitmovinPlayerCore.Source",
+                "usr": "c:@M@BitmovinPlayerCore@objc(pl)BMPSource"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BitmovinCollector@objc(cs)BitmovinPlayerCollector(im)applyWithSourceMetadata:for:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB0C5apply14sourceMetadata3fory04CoreB006SourceF0C_0acH00I0_ptF",
+            "moduleName": "BitmovinCollector",
+            "objc_name": "applyWithSourceMetadata:for:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sourceMetadata",
+            "printedName": "sourceMetadata(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SourceMetadata",
+                "printedName": "CoreCollector.SourceMetadata",
+                "usr": "c:@M@CoreCollector@objc(cs)BMASourceMetadata"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "any BitmovinPlayerCore.Source",
+                "usr": "c:@M@BitmovinPlayerCore@objc(pl)BMPSource"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BitmovinCollector@objc(cs)BitmovinPlayerCollector(im)sourceMetadataFor:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB0C14sourceMetadata3for04CoreB006SourceE0C0acG00H0_p_tF",
+            "moduleName": "BitmovinCollector",
+            "objc_name": "sourceMetadataFor:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendCustomDataEvent",
+            "printedName": "sendCustomDataEvent(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CustomData",
+                "printedName": "CoreCollector.CustomData",
+                "usr": "c:@M@CoreCollector@objc(cs)BMACustomData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BitmovinCollector@objc(cs)BitmovinPlayerCollector(im)sendCustomDataEventWith:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB0C19sendCustomDataEvent4withy04CoreB00eF0C_tF",
+            "moduleName": "BitmovinCollector",
+            "objc_name": "sendCustomDataEventWith:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "apply",
+            "printedName": "apply(customData:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CustomData",
+                "printedName": "CoreCollector.CustomData",
+                "usr": "c:@M@CoreCollector@objc(cs)BMACustomData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "any BitmovinPlayerCore.Source",
+                "usr": "c:@M@BitmovinPlayerCore@objc(pl)BMPSource"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BitmovinCollector@objc(cs)BitmovinPlayerCollector(im)applyWithCustomData:for:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB0C5apply10customData3fory04CoreB006CustomF0C_0acH06Source_ptF",
+            "moduleName": "BitmovinCollector",
+            "objc_name": "applyWithCustomData:for:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "customData",
+            "printedName": "customData(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomData",
+                "printedName": "CoreCollector.CustomData",
+                "usr": "c:@M@CoreCollector@objc(cs)BMACustomData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "any BitmovinPlayerCore.Source",
+                "usr": "c:@M@BitmovinPlayerCore@objc(pl)BMPSource"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BitmovinCollector@objc(cs)BitmovinPlayerCollector(im)customDataFor:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB0C10customData3for04CoreB006CustomE0C0acG06Source_p_tF",
+            "moduleName": "BitmovinCollector",
+            "objc_name": "customDataFor:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUserId",
+            "printedName": "getUserId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BitmovinCollector@objc(cs)BitmovinPlayerCollector(im)getUserId",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB0C9getUserIdSSyF",
+            "moduleName": "BitmovinCollector",
+            "deprecated": true,
+            "objc_name": "getUserId",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "attachPlayer",
+            "printedName": "attachPlayer(player:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BitmovinCollector@objc(cs)BitmovinPlayerCollector(im)attachPlayerWithPlayer:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB0C06attachC06playerySo9BMPPlayer_p_tF",
+            "moduleName": "BitmovinCollector",
+            "deprecated": true,
+            "objc_name": "attachPlayerWithPlayer:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "detachPlayer",
+            "printedName": "detachPlayer()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BitmovinCollector@objc(cs)BitmovinPlayerCollector(im)detachPlayer",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB0C06detachC0yyF",
+            "moduleName": "BitmovinCollector",
+            "deprecated": true,
+            "objc_name": "detachPlayer",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCustomDataOnce",
+            "printedName": "setCustomDataOnce(customData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CustomData",
+                "printedName": "CoreCollector.CustomData",
+                "usr": "c:@M@CoreCollector@objc(cs)BMACustomData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BitmovinCollector@objc(cs)BitmovinPlayerCollector(im)setCustomDataOnceWithCustomData:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB0C17setCustomDataOnce06customF0y04CoreB00eF0C_tF",
+            "moduleName": "BitmovinCollector",
+            "deprecated": true,
+            "objc_name": "setCustomDataOnceWithCustomData:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addSourceMetadata",
+            "printedName": "addSourceMetadata(playerSource:sourceMetadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "any BitmovinPlayerCore.Source",
+                "usr": "c:@M@BitmovinPlayerCore@objc(pl)BMPSource"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SourceMetadata",
+                "printedName": "CoreCollector.SourceMetadata",
+                "usr": "c:@M@CoreCollector@objc(cs)BMASourceMetadata"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BitmovinCollector@objc(cs)BitmovinPlayerCollector(im)addSourceMetadataWithPlayerSource:sourceMetadata:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB0C17addSourceMetadata06playerE006sourceF0y0aC4Core0E0_p_0iB00eF0CtF",
+            "moduleName": "BitmovinCollector",
+            "deprecated": true,
+            "objc_name": "addSourceMetadataWithPlayerSource:sourceMetadata:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BitmovinCollector@objc(cs)BitmovinPlayerCollector",
+        "mangledName": "$s17BitmovinCollector0a6PlayerB0C",
+        "moduleName": "BitmovinCollector",
+        "deprecated": true,
+        "declAttributes": [
+          "AccessControl",
+          "Available",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "BitmovinPlayerCollectorApi",
+            "printedName": "BitmovinPlayerCollectorApi",
+            "usr": "c:@M@BitmovinCollector@objc(pl)BMABitmovinPlayerCollectorApi",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB3ApiP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collector",
+            "printedName": "Collector",
+            "usr": "c:@M@CoreCollector@objc(pl)BMACollector",
+            "mangledName": "$s13CoreCollector0B0P"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BitmovinAnalytics",
+        "printedName": "BitmovinAnalytics",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BitmovinAnalytics",
+                "printedName": "BitmovinCollector.BitmovinAnalytics",
+                "usr": "c:@M@BitmovinCollector@objc(cs)BitmovinAnalytics"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BitmovinAnalyticsConfig",
+                "printedName": "CoreCollector.BitmovinAnalyticsConfig",
+                "usr": "c:@M@CoreCollector@objc(cs)BitmovinAnalyticsConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BitmovinCollector@objc(cs)BitmovinAnalytics(im)initWithConfig:",
+            "mangledName": "$s17BitmovinCollector0A9AnalyticsC6configAC04CoreB00aC6ConfigC_tcfc",
+            "moduleName": "BitmovinCollector",
+            "deprecated": true,
+            "overriding": true,
+            "objc_name": "initWithConfig:",
+            "declAttributes": [
+              "ObjC",
+              "Convenience",
+              "AccessControl",
+              "Available"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "attachBitmovinPlayer",
+            "printedName": "attachBitmovinPlayer(player:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinCollector@objc(cs)BitmovinAnalytics(im)attachBitmovinPlayerWithPlayer:",
+            "mangledName": "$s17BitmovinCollector0A9AnalyticsC06attachA6Player6playerySo9BMPPlayer_p_tF",
+            "moduleName": "BitmovinCollector",
+            "deprecated": true,
+            "objc_name": "attachBitmovinPlayerWithPlayer:",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BitmovinCollector@objc(cs)BitmovinAnalytics",
+        "mangledName": "$s17BitmovinCollector0A9AnalyticsC",
+        "moduleName": "BitmovinCollector",
+        "deprecated": true,
+        "declAttributes": [
+          "AccessControl",
+          "Available",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@BitmovinCollector@objc(cs)BitmovinPlayerCollector",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "BitmovinCollector.BitmovinPlayerCollector",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitmovinPlayerCollectorApi",
+            "printedName": "BitmovinPlayerCollectorApi",
+            "usr": "c:@M@BitmovinCollector@objc(pl)BMABitmovinPlayerCollectorApi",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB3ApiP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collector",
+            "printedName": "Collector",
+            "usr": "c:@M@CoreCollector@objc(pl)BMACollector",
+            "mangledName": "$s13CoreCollector0B0P"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BitmovinPlayerCollectorApi",
+        "printedName": "BitmovinPlayerCollectorApi",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "attach",
+            "printedName": "attach(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinCollector@objc(pl)BMABitmovinPlayerCollectorApi(im)attachTo:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB3ApiP6attach2toySo9BMPPlayer_p_tF",
+            "moduleName": "BitmovinCollector",
+            "genericSig": "<τ_0_0 where τ_0_0 : BitmovinCollector.BitmovinPlayerCollectorApi>",
+            "sugared_genericSig": "<Self where Self : BitmovinCollector.BitmovinPlayerCollectorApi>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "apply",
+            "printedName": "apply(sourceMetadata:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SourceMetadata",
+                "printedName": "CoreCollector.SourceMetadata",
+                "usr": "c:@M@CoreCollector@objc(cs)BMASourceMetadata"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "any BitmovinPlayerCore.Source",
+                "usr": "c:@M@BitmovinPlayerCore@objc(pl)BMPSource"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinCollector@objc(pl)BMABitmovinPlayerCollectorApi(im)applyWithSourceMetadata:for:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB3ApiP5apply14sourceMetadata3fory04CoreB006SourceG0C_0acI00J0_ptF",
+            "moduleName": "BitmovinCollector",
+            "genericSig": "<τ_0_0 where τ_0_0 : BitmovinCollector.BitmovinPlayerCollectorApi>",
+            "sugared_genericSig": "<Self where Self : BitmovinCollector.BitmovinPlayerCollectorApi>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sourceMetadata",
+            "printedName": "sourceMetadata(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SourceMetadata",
+                "printedName": "CoreCollector.SourceMetadata",
+                "usr": "c:@M@CoreCollector@objc(cs)BMASourceMetadata"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "any BitmovinPlayerCore.Source",
+                "usr": "c:@M@BitmovinPlayerCore@objc(pl)BMPSource"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinCollector@objc(pl)BMABitmovinPlayerCollectorApi(im)sourceMetadataFor:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB3ApiP14sourceMetadata3for04CoreB006SourceF0C0acH00I0_p_tF",
+            "moduleName": "BitmovinCollector",
+            "genericSig": "<τ_0_0 where τ_0_0 : BitmovinCollector.BitmovinPlayerCollectorApi>",
+            "sugared_genericSig": "<Self where Self : BitmovinCollector.BitmovinPlayerCollectorApi>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "apply",
+            "printedName": "apply(customData:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CustomData",
+                "printedName": "CoreCollector.CustomData",
+                "usr": "c:@M@CoreCollector@objc(cs)BMACustomData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "any BitmovinPlayerCore.Source",
+                "usr": "c:@M@BitmovinPlayerCore@objc(pl)BMPSource"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinCollector@objc(pl)BMABitmovinPlayerCollectorApi(im)applyWithCustomData:for:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB3ApiP5apply10customData3fory04CoreB006CustomG0C_0acI06Source_ptF",
+            "moduleName": "BitmovinCollector",
+            "genericSig": "<τ_0_0 where τ_0_0 : BitmovinCollector.BitmovinPlayerCollectorApi>",
+            "sugared_genericSig": "<Self where Self : BitmovinCollector.BitmovinPlayerCollectorApi>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "customData",
+            "printedName": "customData(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomData",
+                "printedName": "CoreCollector.CustomData",
+                "usr": "c:@M@CoreCollector@objc(cs)BMACustomData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "any BitmovinPlayerCore.Source",
+                "usr": "c:@M@BitmovinPlayerCore@objc(pl)BMPSource"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinCollector@objc(pl)BMABitmovinPlayerCollectorApi(im)customDataFor:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB3ApiP10customData3for04CoreB006CustomF0C0acH06Source_p_tF",
+            "moduleName": "BitmovinCollector",
+            "genericSig": "<τ_0_0 where τ_0_0 : BitmovinCollector.BitmovinPlayerCollectorApi>",
+            "sugared_genericSig": "<Self where Self : BitmovinCollector.BitmovinPlayerCollectorApi>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addSourceMetadata",
+            "printedName": "addSourceMetadata(playerSource:sourceMetadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "any BitmovinPlayerCore.Source",
+                "usr": "c:@M@BitmovinPlayerCore@objc(pl)BMPSource"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SourceMetadata",
+                "printedName": "CoreCollector.SourceMetadata",
+                "usr": "c:@M@CoreCollector@objc(cs)BMASourceMetadata"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinCollector@objc(pl)BMABitmovinPlayerCollectorApi(im)addSourceMetadataWithPlayerSource:sourceMetadata:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB3ApiP17addSourceMetadata06playerF006sourceG0y0aC4Core0F0_p_0jB00fG0CtF",
+            "moduleName": "BitmovinCollector",
+            "genericSig": "<τ_0_0 where τ_0_0 : BitmovinCollector.BitmovinPlayerCollectorApi>",
+            "sugared_genericSig": "<Self where Self : BitmovinCollector.BitmovinPlayerCollectorApi>",
+            "deprecated": true,
+            "protocolReq": true,
+            "declAttributes": [
+              "Available",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "attachPlayer",
+            "printedName": "attachPlayer(player:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BitmovinCollector@objc(pl)BMABitmovinPlayerCollectorApi(im)attachPlayerWithPlayer:",
+            "mangledName": "$s17BitmovinCollector0a6PlayerB3ApiP06attachC06playerySo9BMPPlayer_p_tF",
+            "moduleName": "BitmovinCollector",
+            "genericSig": "<τ_0_0 where τ_0_0 : BitmovinCollector.BitmovinPlayerCollectorApi>",
+            "sugared_genericSig": "<Self where Self : BitmovinCollector.BitmovinPlayerCollectorApi>",
+            "deprecated": true,
+            "protocolReq": true,
+            "declAttributes": [
+              "Available",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@BitmovinCollector@objc(pl)BMABitmovinPlayerCollectorApi",
+        "mangledName": "$s17BitmovinCollector0a6PlayerB3ApiP",
+        "moduleName": "BitmovinCollector",
+        "genericSig": "<τ_0_0 : CoreCollector.Collector>",
+        "sugared_genericSig": "<Self : CoreCollector.Collector>",
+        "objc_name": "BMABitmovinPlayerCollectorApi",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Collector",
+            "printedName": "Collector",
+            "usr": "c:@M@CoreCollector@objc(pl)BMACollector",
+            "mangledName": "$s13CoreCollector0B0P"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinCollector"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ios-ci\/macos-walker-1\/_work\/bitmovin-analytics-collector-ios-internal\/bitmovin-analytics-collector-ios-internal\/BitmovinAnalyticsCollector\/BitmovinCollector\/services\/CastEventDataManipulator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 276,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ios-ci\/macos-walker-1\/_work\/bitmovin-analytics-collector-ios-internal\/bitmovin-analytics-collector-ios-internal\/BitmovinAnalyticsCollector\/BitmovinCollector\/services\/CastEventDataManipulator.swift",
+      "kind": "StringLiteral",
+      "offset": 148,
+      "length": 24,
+      "value": "\"BitmovinCollector.CastEventDataManipulator\""
+    },
+    {
+      "filePath": "\/Users\/ios-ci\/macos-walker-1\/_work\/bitmovin-analytics-collector-ios-internal\/bitmovin-analytics-collector-ios-internal\/BitmovinAnalyticsCollector\/BitmovinCollector\/BitmovinPlayerCollector.swift",
+      "kind": "StringLiteral",
+      "offset": 106,
+      "length": 23,
+      "value": "\"BitmovinCollector.BitmovinPlayerCollector\""
+    },
+    {
+      "filePath": "\/Users\/ios-ci\/macos-walker-1\/_work\/bitmovin-analytics-collector-ios-internal\/bitmovin-analytics-collector-ios-internal\/BitmovinAnalyticsCollector\/BitmovinCollector\/adapter\/BitmovinPlayerAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 230,
+      "length": 23,
+      "value": "\"BitmovinPlayerAdapter\""
+    },
+    {
+      "filePath": "\/Users\/ios-ci\/macos-walker-1\/_work\/bitmovin-analytics-collector-ios-internal\/bitmovin-analytics-collector-ios-internal\/BitmovinAnalyticsCollector\/BitmovinCollector\/adapter\/BitmovinPlayerAdapter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 527,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ios-ci\/macos-walker-1\/_work\/bitmovin-analytics-collector-ios-internal\/bitmovin-analytics-collector-ios-internal\/BitmovinAnalyticsCollector\/BitmovinCollector\/adapter\/BitmovinPlayerAdapter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 935,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ios-ci\/macos-walker-1\/_work\/bitmovin-analytics-collector-ios-internal\/bitmovin-analytics-collector-ios-internal\/BitmovinAnalyticsCollector\/BitmovinCollector\/adapter\/BitmovinPlayerAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 97,
+      "length": 21,
+      "value": "\"BitmovinCollector.BitmovinPlayerAdapter\""
+    },
+    {
+      "filePath": "\/Users\/ios-ci\/macos-walker-1\/_work\/bitmovin-analytics-collector-ios-internal\/bitmovin-analytics-collector-ios-internal\/BitmovinAnalyticsCollector\/BitmovinCollector\/DeferredLicenseRelay.swift",
+      "kind": "StringLiteral",
+      "offset": 225,
+      "length": 10,
+      "value": "\"DEFERRED\""
+    },
+    {
+      "filePath": "\/Users\/ios-ci\/macos-walker-1\/_work\/bitmovin-analytics-collector-ios-internal\/bitmovin-analytics-collector-ios-internal\/BitmovinAnalyticsCollector\/BitmovinCollector\/DeferredLicenseRelay.swift",
+      "kind": "StringLiteral",
+      "offset": 252,
+      "length": 20,
+      "value": "\"BitmovinCollector.DeferredLicenseRelay\""
+    },
+    {
+      "filePath": "\/Users\/ios-ci\/macos-walker-1\/_work\/bitmovin-analytics-collector-ios-internal\/bitmovin-analytics-collector-ios-internal\/BitmovinAnalyticsCollector\/BitmovinCollector\/adapter\/BitmovinAdAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 63,
+      "length": 17,
+      "value": "\"BitmovinCollector.BitmovinAdAdapter\""
+    },
+    {
+      "filePath": "\/Users\/ios-ci\/macos-walker-1\/_work\/bitmovin-analytics-collector-ios-internal\/bitmovin-analytics-collector-ios-internal\/BitmovinAnalyticsCollector\/BitmovinCollector\/player\/DefaultBitmovinPlayerListener.swift",
+      "kind": "StringLiteral",
+      "offset": 42,
+      "length": 29,
+      "value": "\"BitmovinCollector.DefaultBitmovinPlayerListener\""
+    }
+  ]
+}

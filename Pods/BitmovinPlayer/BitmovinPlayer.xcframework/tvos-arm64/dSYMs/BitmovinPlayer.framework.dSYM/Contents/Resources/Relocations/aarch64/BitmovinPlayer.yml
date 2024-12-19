@@ -1,0 +1,7 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/ios-ci/Library/Developer/Xcode/DerivedData/BitmovinPlayer-eubhqdhhxtkswiaaqfhdbbvvsgyy/Build/Intermediates.noindex/ArchiveIntermediates/BitmovinPlayer/InstallationBuildProductsLocation/Library/Frameworks/BitmovinPlayer.framework/BitmovinPlayer'
+relocations:
+  - { offsetInCU: 0x33, offset: 0x33, size: 0x8, addend: 0x0, symName: _BitmovinPlayerVersionString, symObjAddr: 0x0, symBinAddr: 0x4E80, symSize: 0x0 }
+  - { offsetInCU: 0x67, offset: 0x67, size: 0x8, addend: 0x0, symName: _BitmovinPlayerVersionNumber, symObjAddr: 0x38, symBinAddr: 0x4EB8, symSize: 0x0 }
+...

@@ -1,0 +1,11 @@
+framework module BitmovinPlayerAnalytics {
+  umbrella header "BitmovinPlayerAnalytics.h"
+  export *
+
+  module * { export * }
+}
+
+module BitmovinPlayerAnalytics.Swift {
+  header "BitmovinPlayerAnalytics-Swift.h"
+  requires objc
+}

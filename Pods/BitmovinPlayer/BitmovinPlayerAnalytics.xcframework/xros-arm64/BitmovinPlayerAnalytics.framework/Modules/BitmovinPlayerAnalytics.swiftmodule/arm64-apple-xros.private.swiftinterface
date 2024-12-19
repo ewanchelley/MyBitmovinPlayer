@@ -1,0 +1,75 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-xros1.2 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BitmovinPlayerAnalytics
+@_exported import BitmovinCollector
+@_exported import BitmovinPlayerAnalytics
+import BitmovinPlayerCore
+import Combine
+@_exported import CoreCollector
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension BitmovinPlayerCore.Player {
+  public var analytics: (any BitmovinPlayerAnalytics.PlayerAnalyticsApi)? {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objcMembers @objc(_BPAInternalPlayerAnalyticsFactory) public class _InternalPlayerAnalyticsFactory : ObjectiveC.NSObject, @unchecked Swift.Sendable {
+  @objc public static func create(integrationLanguage: BitmovinPlayerCore._IntegrationLanguage, playerConfig: BitmovinPlayerCore.PlayerConfig, analyticsConfig: CoreCollector.AnalyticsConfig, defaultMetadata: CoreCollector.DefaultMetadata) -> any BitmovinPlayerCore.Player
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(BPAPlayerAnalyticsApi) public protocol PlayerAnalyticsApi : Swift.Sendable {
+  @objc var impressionId: Swift.String? { get }
+  @objc var userId: Swift.String { get }
+  @objc var ssai: any BitmovinPlayerAnalytics.AnalyticsSsaiApi { get }
+  @objc func sendCustomDataEvent(customData: CoreCollector.CustomData)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers @objc(BPAPlayerAnalyticsApiAccessor) public class PlayerAnalyticsApiAccessor : ObjectiveC.NSObject, @unchecked Swift.Sendable {
+  @objc public static func from(player: any BitmovinPlayerCore.Player) -> (any BitmovinPlayerAnalytics.PlayerAnalyticsApi)?
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers @objc(BPASourceAnalyticsApiAccessor) public class SourceAnalyticsApiAccessor : ObjectiveC.NSObject, @unchecked Swift.Sendable {
+  @objc public static func from(source: any BitmovinPlayerCore.Source) -> (any BitmovinPlayerAnalytics.SourceAnalyticsApi)?
+  @objc deinit
+}
+@objc extension BitmovinPlayerCore.SourceFactory {
+  @objc @available(*, deprecated, renamed: "createSource(from:sourceMetadata:)")
+  public static func create(from sourceConfig: BitmovinPlayerCore.SourceConfig, sourceMetadata: CoreCollector.SourceMetadata) -> any BitmovinPlayerCore.Source
+  @objc(createSourceFrom:sourceMetadata:) public static func createSource(from sourceConfig: BitmovinPlayerCore.SourceConfig, sourceMetadata: CoreCollector.SourceMetadata) -> any BitmovinPlayerCore.Source
+}
+@objc(BPAAnalyticsSsaiApi) public protocol AnalyticsSsaiApi : Swift.Sendable {
+  @objc func adBreakStart()
+  @objc func adBreakStart(adBreakMetadata: CoreCollector.SsaiAdBreakMetadata)
+  @objc func adStart()
+  @objc func adStart(adMetadata: CoreCollector.SsaiAdMetadata)
+  @objc func adBreakEnd()
+  @objc func adQuartileFinished(adQuartile: CoreCollector.SsaiAdQuartile)
+  @objc func adQuartileFinished(adQuartile: CoreCollector.SsaiAdQuartile, adQuartileMetadata: CoreCollector.SsaiAdQuartileMetadata)
+}
+public enum AnalyticsPlayerConfig : @unchecked Swift.Sendable {
+  case enabled(analyticsConfig: CoreCollector.AnalyticsConfig = AnalyticsConfig(licenseKey: "DEFERRED"), defaultMetadata: CoreCollector.DefaultMetadata = DefaultMetadata())
+  case disabled
+  public static var enabled: BitmovinPlayerAnalytics.AnalyticsPlayerConfig {
+    get
+  }
+}
+extension BitmovinPlayerCore.Source {
+  public var analytics: (any BitmovinPlayerAnalytics.SourceAnalyticsApi)? {
+    get
+  }
+}
+extension BitmovinPlayerCore.PlayerFactory {
+  public static var analyticsSdkVersion: Swift.String {
+    get
+  }
+  @available(*, deprecated, renamed: "createPlayer(playerConfig:analytics:)")
+  public static func create(playerConfig: BitmovinPlayerCore.PlayerConfig = PlayerConfig(), analyticsConfig: CoreCollector.AnalyticsConfig, defaultMetadata: CoreCollector.DefaultMetadata = DefaultMetadata()) -> any BitmovinPlayerCore.Player
+  public static func createPlayer(playerConfig: BitmovinPlayerCore.PlayerConfig = PlayerConfig(), analytics: BitmovinPlayerAnalytics.AnalyticsPlayerConfig = .enabled) -> any BitmovinPlayerCore.Player
+}
+@objc(BPASourceAnalyticsApi) public protocol SourceAnalyticsApi : Swift.Sendable {
+  @objc var metadata: CoreCollector.SourceMetadata { get }
+  @objc var customData: CoreCollector.CustomData { get set }
+}

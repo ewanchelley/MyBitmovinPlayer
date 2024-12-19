@@ -1,0 +1,52 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "BitmovinCollector",
+        "printedName": "BitmovinCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayer",
+        "declAttributes": [
+          "Exported",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerAnalytics",
+        "printedName": "BitmovinPlayerAnalytics",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayer",
+        "declAttributes": [
+          "Exported"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayerCore",
+        "printedName": "BitmovinPlayerCore",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayer",
+        "declAttributes": [
+          "Exported"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "BitmovinPlayer",
+        "declAttributes": [
+          "Exported"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

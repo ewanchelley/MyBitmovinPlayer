@@ -1,0 +1,27 @@
+PODS:
+  - BitmovinAnalyticsCollector/BitmovinPlayer (3.9.0):
+    - BitmovinAnalyticsCollector/Core
+    - BitmovinPlayerCore (~> 3.48)
+  - BitmovinAnalyticsCollector/Core (3.9.0)
+  - BitmovinPlayer (3.80.0):
+    - BitmovinAnalyticsCollector/BitmovinPlayer (~> 3.0)
+    - BitmovinPlayerCore (= 3.80.0)
+  - BitmovinPlayerCore (3.80.0)
+
+DEPENDENCIES:
+  - BitmovinPlayer (= 3.80.0)
+
+SPEC REPOS:
+  trunk:
+    - BitmovinAnalyticsCollector
+    - BitmovinPlayer
+    - BitmovinPlayerCore
+
+SPEC CHECKSUMS:
+  BitmovinAnalyticsCollector: d08e0b13bcc32973370e0d71f2faa739561bac0a
+  BitmovinPlayer: aade6c03db56aca6f309509bdf7e0017196b64e0
+  BitmovinPlayerCore: 47f080a1cd7f2d009daf8a9d92c871078f0a9b2e
+
+PODFILE CHECKSUM: 169970d42307733a8b82a8725053f56547a8b1a8
+
+COCOAPODS: 1.16.2

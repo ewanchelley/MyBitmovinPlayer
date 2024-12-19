@@ -1,0 +1,967 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-xros1.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CoreCollector
+import AVFoundation
+import AVKit
+import Combine
+import CoreMedia
+import Foundation
+import Swift
+import UIKit
+import VideoToolbox
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.log
+import os
+@_hasMissingDesignatedInitializers public class VideoStartFailureService {
+  public var videoStartFailed: Swift.Bool {
+    get
+  }
+  public var videoStartFailedReason: Swift.String? {
+    get
+  }
+  public func startTimer()
+  public func clearTimer()
+  public func setVideoStartFailed(withReason reason: Swift.String)
+  public func reset()
+  @objc deinit
+}
+public protocol _Event {
+  var name: Swift.String { get }
+  var timestamp: Foundation.Date { get }
+}
+public enum PlayerType : Swift.String {
+  case avplayer
+  case bitmovin
+  case amazonivs
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc(BMACustomData) @objcMembers public class CustomData : ObjectiveC.NSObject {
+  @objc final public let customData1: Swift.String?
+  @objc final public let customData2: Swift.String?
+  @objc final public let customData3: Swift.String?
+  @objc final public let customData4: Swift.String?
+  @objc final public let customData5: Swift.String?
+  @objc final public let customData6: Swift.String?
+  @objc final public let customData7: Swift.String?
+  @objc final public let customData8: Swift.String?
+  @objc final public let customData9: Swift.String?
+  @objc final public let customData10: Swift.String?
+  @objc final public let customData11: Swift.String?
+  @objc final public let customData12: Swift.String?
+  @objc final public let customData13: Swift.String?
+  @objc final public let customData14: Swift.String?
+  @objc final public let customData15: Swift.String?
+  @objc final public let customData16: Swift.String?
+  @objc final public let customData17: Swift.String?
+  @objc final public let customData18: Swift.String?
+  @objc final public let customData19: Swift.String?
+  @objc final public let customData20: Swift.String?
+  @objc final public let customData21: Swift.String?
+  @objc final public let customData22: Swift.String?
+  @objc final public let customData23: Swift.String?
+  @objc final public let customData24: Swift.String?
+  @objc final public let customData25: Swift.String?
+  @objc final public let customData26: Swift.String?
+  @objc final public let customData27: Swift.String?
+  @objc final public let customData28: Swift.String?
+  @objc final public let customData29: Swift.String?
+  @objc final public let customData30: Swift.String?
+  @objc final public let experimentName: Swift.String?
+  @nonobjc public init(customData1: Swift.String? = nil, customData2: Swift.String? = nil, customData3: Swift.String? = nil, customData4: Swift.String? = nil, customData5: Swift.String? = nil, customData6: Swift.String? = nil, customData7: Swift.String? = nil, customData8: Swift.String? = nil, customData9: Swift.String? = nil, customData10: Swift.String? = nil, customData11: Swift.String? = nil, customData12: Swift.String? = nil, customData13: Swift.String? = nil, customData14: Swift.String? = nil, customData15: Swift.String? = nil, customData16: Swift.String? = nil, customData17: Swift.String? = nil, customData18: Swift.String? = nil, customData19: Swift.String? = nil, customData20: Swift.String? = nil, customData21: Swift.String? = nil, customData22: Swift.String? = nil, customData23: Swift.String? = nil, customData24: Swift.String? = nil, customData25: Swift.String? = nil, customData26: Swift.String? = nil, customData27: Swift.String? = nil, customData28: Swift.String? = nil, customData29: Swift.String? = nil, customData30: Swift.String? = nil, experimentName: Swift.String? = nil)
+  @objc deinit
+}
+public class DownloadSpeedInfoDto : Swift.Codable {
+  public init()
+  public var segmentsDownloadCount: Swift.Int
+  public var segmentsDownloadSize: Swift.Int
+  public var segmentsDownloadTime: Swift.Int
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public protocol PlayerAdapter {
+  func initialize()
+  func stopMonitoring()
+  func destroy()
+  func resetSourceState()
+  var drmDownloadTime: Swift.Int? { get }
+  var currentTime: CoreMedia.CMTime? { get }
+}
+public class LicenseKeyProviderFactory {
+  public init()
+  public func createInstant(licenseKey: Swift.String) -> any CoreCollector.LicenseKeyProvider
+  public func createDeferred() -> any CoreCollector.LicenseKeyReceiver
+  @objc deinit
+}
+public enum _EventTiming {
+  case before
+  case on
+  case after
+  public static func == (a: CoreCollector._EventTiming, b: CoreCollector._EventTiming) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class AnalyticsAdBreak {
+  public var id: Swift.String
+  public var ads: [CoreCollector.AnalyticsAd]
+  public var position: CoreCollector.AdPosition?
+  public var offset: Swift.String?
+  public var scheduleTime: Foundation.TimeInterval?
+  public var replaceContentDuration: Foundation.TimeInterval?
+  public var preloadOffset: Swift.Int?
+  public var tagType: CoreCollector._CsaiAdTagType?
+  public var tagUrl: Swift.String?
+  public var persistent: Swift.Bool?
+  public var fallbackIndex: Swift.Int
+  public init(id: Swift.String, ads: [CoreCollector.AnalyticsAd])
+  @objc deinit
+}
+@objc(BMASourceMetadata) @objcMembers public class SourceMetadata : ObjectiveC.NSObject {
+  @objc final public let videoId: Swift.String?
+  @objc final public let title: Swift.String?
+  @objc final public let path: Swift.String?
+  final public let isLive: Swift.Bool?
+  @objc final public let cdnProvider: Swift.String?
+  @objc final public let customData: CoreCollector.CustomData
+  @nonobjc public init(videoId: Swift.String? = nil, title: Swift.String? = nil, path: Swift.String? = nil, isLive: Swift.Bool? = nil, cdnProvider: Swift.String? = nil, customData: CoreCollector.CustomData = CustomData())
+  @objc deinit
+}
+public enum ClientFactory {
+  public static func createDefault() -> any CoreCollector._Client
+}
+public protocol PlayerContext {
+  var position: CoreMedia.CMTime? { get }
+  var isLive: Swift.Bool? { get }
+  var isPlaying: Swift.Bool { get }
+}
+public protocol UserIdProvider {
+  func getUserId() -> Swift.String
+}
+@objc(BMADefaultMetadata) @objcMembers public class DefaultMetadata : ObjectiveC.NSObject {
+  @objc final public let cdnProvider: Swift.String?
+  @objc final public let customUserId: Swift.String?
+  @objc final public let customData: CoreCollector.CustomData
+  @nonobjc public init(cdnProvider: Swift.String? = nil, customUserId: Swift.String? = nil, customData: CoreCollector.CustomData = CustomData())
+  @objc deinit
+}
+public enum DeviceClass : Swift.String, Swift.Codable {
+  case television
+  case phone
+  case tablet
+  case wearable
+  case desktop
+  case console
+  case headMountedDisplay
+  case other
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc(BMAAdPosition) public enum AdPosition : Swift.Int {
+  case preroll
+  case midroll
+  case postroll
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum DeviceInformationUtils {
+}
+@objc(BMAAnalyticsConfig) @objcMembers public class AnalyticsConfig : ObjectiveC.NSObject {
+  @objc final public let licenseKey: Swift.String
+  @objc final public let retryPolicy: CoreCollector.RetryPolicy
+  @objc final public let randomizeUserId: Swift.Bool
+  @objc final public let adTrackingDisabled: Swift.Bool
+  @objc final public let backendUrl: Swift.String
+  @objc final public let ssaiEngagementTrackingEnabled: Swift.Bool
+  @objc public init(licenseKey: Swift.String, retryPolicy: CoreCollector.RetryPolicy = RetryPolicy.noRetry, randomizeUserId: Swift.Bool = false, adTrackingDisabled: Swift.Bool = false, backendUrl: Swift.String = "https://analytics-ingress-global.bitmovin.com", ssaiEngagementTrackingEnabled: Swift.Bool = false)
+  @objc public init(licenseKey: Swift.String)
+  @objc deinit
+}
+public class DownloadSpeedMeter {
+  public init()
+  public func add(measurement: CoreCollector.SpeedMeasurement)
+  public func getInfoAndReset() -> CoreCollector.DownloadSpeedInfoDto
+  @objc deinit
+}
+@objc(BMASsaiAdBreakMetadata) public class SsaiAdBreakMetadata : ObjectiveC.NSObject {
+  final public let adPosition: CoreCollector.AdPosition?
+  public init(adPosition: CoreCollector.AdPosition? = nil)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DrmPerformanceInfo {
+  @objc deinit
+}
+public protocol LicenseKeyProvider {
+  var licenseKey: Swift.String? { get }
+  var licenseKeyState: CoreCollector.LicenseKeyState { get }
+  #if compiler(>=5.3) && $AsyncAwait
+  func waitForResult() async -> CoreCollector.LicenseKeyResult
+  #endif
+}
+extension CoreCollector.LicenseKeyProvider {
+  public var licenseKey: Swift.String? {
+    get
+  }
+}
+public protocol DispatchQueueProtocol {
+  func sync<T>(execute work: () throws -> T) rethrows -> T
+  func asyncAfter(deadline: Dispatch.DispatchTime, execute: Dispatch.DispatchWorkItem)
+}
+extension Dispatch.DispatchQueue : CoreCollector.DispatchQueueProtocol {
+}
+public class AdModuleInformation {
+  public init(name: Swift.String, version: Swift.String?)
+  @objc deinit
+}
+@objc(BMASsaiAdQuartileMetadata) public class SsaiAdQuartileMetadata : ObjectiveC.NSObject {
+  final public let failedBeaconUrl: Swift.String?
+  public init(failedBeaconUrl: Swift.String? = nil)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SsaiAdBreakEndEvent : CoreCollector._Event {
+  final public let name: Swift.String
+  final public let timestamp: Foundation.Date
+  final public let didAdStart: Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DeviceInformationDto : Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class DetachCollectorEvent : CoreCollector._Event {
+  final public let name: Swift.String
+  final public let timestamp: Foundation.Date
+  @objc deinit
+}
+@objc(BMARetryPolicy) public enum RetryPolicy : Swift.Int {
+  case noRetry
+  case longTerm
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol _CurrentSourceMetadataProvider {
+  var sourceMetadataForCurrentSource: CoreCollector.SourceMetadata? { get }
+  var currentSource: Swift.AnyObject? { get set }
+}
+@_hasMissingDesignatedInitializers public class EventData : Swift.Codable {
+  public var domain: Swift.String?
+  public var path: Swift.String?
+  public var language: Swift.String?
+  public var userAgent: Swift.String?
+  public var deviceInformation: CoreCollector.DeviceInformationDto?
+  public var errorCode: Swift.Int?
+  public var errorMessage: Swift.String?
+  public var errorData: Swift.String?
+  public var screenWidth: Swift.Int?
+  public var screenHeight: Swift.Int?
+  public var isLive: Swift.Bool
+  public var isCasting: Swift.Bool
+  public var castTech: Swift.String?
+  public var isMuted: Swift.Bool?
+  public var videoDuration: Swift.Int
+  public var time: Swift.Int?
+  public var videoWindowWidth: Swift.Int
+  public var videoWindowHeight: Swift.Int
+  public var droppedFrames: Swift.Int
+  public var played: Swift.Int
+  public var buffered: Swift.Int
+  public var paused: Swift.Int
+  public var ad: Swift.Int
+  public var seeked: Swift.Int
+  public var videoPlaybackWidth: Swift.Int?
+  public var videoPlaybackHeight: Swift.Int?
+  public var videoBitrate: Swift.Double
+  public var audioBitrate: Swift.Double
+  public var videoTimeStart: Swift.Int
+  public var videoTimeEnd: Swift.Int
+  public var videoStartupTime: Swift.Int
+  public var duration: Swift.Int
+  public var startupTime: Swift.Int
+  public var analyticsVersion: Swift.String
+  public var key: Swift.String?
+  public var playerKey: Swift.String?
+  public var player: Swift.String?
+  public var playerTech: Swift.String?
+  public var cdnProvider: Swift.String?
+  public var streamFormat: Swift.String?
+  public var videoId: Swift.String?
+  public var videoTitle: Swift.String?
+  public var customUserId: Swift.String?
+  public var customData1: Swift.String?
+  public var customData2: Swift.String?
+  public var customData3: Swift.String?
+  public var customData4: Swift.String?
+  public var customData5: Swift.String?
+  public var customData6: Swift.String?
+  public var customData7: Swift.String?
+  public var customData8: Swift.String?
+  public var customData9: Swift.String?
+  public var customData10: Swift.String?
+  public var customData11: Swift.String?
+  public var customData12: Swift.String?
+  public var customData13: Swift.String?
+  public var customData14: Swift.String?
+  public var customData15: Swift.String?
+  public var customData16: Swift.String?
+  public var customData17: Swift.String?
+  public var customData18: Swift.String?
+  public var customData19: Swift.String?
+  public var customData20: Swift.String?
+  public var customData21: Swift.String?
+  public var customData22: Swift.String?
+  public var customData23: Swift.String?
+  public var customData24: Swift.String?
+  public var customData25: Swift.String?
+  public var customData26: Swift.String?
+  public var customData27: Swift.String?
+  public var customData28: Swift.String?
+  public var customData29: Swift.String?
+  public var customData30: Swift.String?
+  public var experimentName: Swift.String?
+  public var userId: Swift.String?
+  public var impressionId: Swift.String
+  public var state: Swift.String?
+  public var m3u8Url: Swift.String?
+  public var mpdUrl: Swift.String?
+  public var progUrl: Swift.String?
+  public var playerStartupTime: Swift.Int
+  public var pageLoadType: Swift.Int
+  public var pageLoadTime: Swift.Int
+  public var version: Swift.String?
+  public var sequenceNumber: Swift.Int
+  public var drmType: Swift.String?
+  public var drmLoadTime: Swift.Int?
+  public var platform: Swift.String
+  public var videoCodec: Swift.String?
+  public var audioCodec: Swift.String?
+  public var supportedVideoCodecs: [Swift.String]?
+  public var subtitleEnabled: Swift.Bool?
+  public var subtitleLanguage: Swift.String?
+  public var audioLanguage: Swift.String?
+  public var videoStartFailed: Swift.Bool?
+  public var videoStartFailedReason: Swift.String?
+  public var downloadSpeedInfo: CoreCollector.DownloadSpeedInfoDto?
+  public var adPosition: Swift.String?
+  public var adId: Swift.String?
+  public var adSystem: Swift.String?
+  public var adIndex: Swift.Int?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public enum _CsaiAdTagType : Swift.String {
+  case VAST
+  case VMAP
+  case VPAID
+  case UNKNOWN
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension CoreMedia.CMTime {
+  public func toMillis() -> Swift.Int?
+}
+public enum PlayerState : Swift.String {
+  case ad
+  case adFinished
+  case ready
+  case startup
+  case buffering
+  case error
+  case playing
+  case paused
+  case qualitychange
+  case seeking
+  case subtitlechange
+  case audiochange
+  case exitBeforeVideostart
+  case sourceChanged
+  case customdatachange
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class StopSessionEvent : CoreCollector._Event {
+  final public let name: Swift.String
+  final public let timestamp: Foundation.Date
+  @objc deinit
+}
+@objc(BMASsaiAdMetadata) public class SsaiAdMetadata : ObjectiveC.NSObject {
+  final public let adId: Swift.String?
+  final public let adSystem: Swift.String?
+  final public let customData: CoreCollector.CustomData?
+  public init(adId: Swift.String? = nil, adSystem: Swift.String? = nil, customData: CoreCollector.CustomData? = nil)
+  @objc deinit
+}
+public enum LicenseKeyResult : Swift.Equatable {
+  case timeout
+  case provided(_: Swift.String)
+  case notProvided
+  public static func == (a: CoreCollector.LicenseKeyResult, b: CoreCollector.LicenseKeyResult) -> Swift.Bool
+}
+public typealias _HttpCompletionHandlerType = ((_ data: Foundation.Data?, _ response: Foundation.URLResponse?, _ error: (any Swift.Error)?) -> Swift.Void)
+public protocol _Client {
+  func post(urlString: Swift.String, json: Swift.String, routingParam: Swift.String?, completionHandler: CoreCollector._HttpCompletionHandlerType?)
+}
+@objc public protocol SsaiApi {
+  @objc func adBreakStart()
+  @objc func adBreakStart(adBreakMetadata: CoreCollector.SsaiAdBreakMetadata)
+  @objc func adStart()
+  @objc func adStart(adMetadata: CoreCollector.SsaiAdMetadata)
+  @objc func adBreakEnd()
+  @objc func adQuartileFinished(adQuartile: CoreCollector.SsaiAdQuartile)
+  @objc func adQuartileFinished(adQuartile: CoreCollector.SsaiAdQuartile, adQuartileMetadata: CoreCollector.SsaiAdQuartileMetadata)
+}
+public protocol EventDataManipulatorPipeline {
+  func registerEventDataManipulator(manipulator: any CoreCollector.EventDataManipulator)
+}
+@objc(BMACollector) public protocol Collector {
+  @objc var impressionId: Swift.String? { get }
+  @objc var userId: Swift.String { get }
+  @objc var ssai: any CoreCollector.SsaiApi { get }
+  @objc func detach()
+  @objc func sendCustomDataEvent(with customData: CoreCollector.CustomData)
+  @objc @available(*, deprecated, renamed: "userId")
+  func getUserId() -> Swift.String
+  @objc @available(*, deprecated, renamed: "sendCustomDataEvent(with:)")
+  func setCustomDataOnce(customData: CoreCollector.CustomData)
+  @objc @available(*, deprecated, renamed: "detach()")
+  func detachPlayer()
+}
+public protocol StateMachine : CoreCollector.SessionInfoProvider {
+  var state: CoreCollector.PlayerState { get }
+  var didAttemptPlayingVideo: Swift.Bool { get }
+  var didStartPlayingVideo: Swift.Bool { get }
+  var videoStartFailureService: CoreCollector.VideoStartFailureService { get }
+  func transitionState(destinationState: CoreCollector.PlayerState, time: CoreMedia.CMTime?)
+  func play(time: CoreMedia.CMTime?)
+  func pause(time: CoreMedia.CMTime?)
+  func pause(time: CoreMedia.CMTime?, overrideEnterTimestamp: Swift.Int?)
+  func playing(time: CoreMedia.CMTime?)
+  func seek(time: CoreMedia.CMTime?, overrideEnterTimestamp: Swift.Int?)
+  func seek(time: CoreMedia.CMTime?)
+  func videoQualityChange(time: CoreMedia.CMTime?, setQualityFunction: @escaping () -> Swift.Void)
+  func audioQualityChange(time: CoreMedia.CMTime?)
+  func error(withError error: CoreCollector.ErrorData, time: CoreMedia.CMTime?)
+  func sourceChange(_ previousVideoDuration: CoreMedia.CMTime?, _ nextVideotimeStart: CoreMedia.CMTime?, _ shouldStartup: Swift.Bool)
+  func ad(time: CoreMedia.CMTime?)
+  func adFinished()
+  func exitBeforeVideostart(withReason reason: Swift.String, withError error: CoreCollector.ErrorData?)
+  func exitBeforeVideostart(withReason reason: Swift.String)
+  func stopSession()
+}
+public class _AnalyticsLogger {
+  public init(className: Swift.String)
+  public func i(_ message: Swift.String)
+  public func d(_ message: Swift.String)
+  public func e(_ message: Swift.String)
+  public func f(_ message: Swift.String)
+  @objc deinit
+}
+public enum DrmType : Swift.String {
+  case fairplay
+  case widevine
+  case playready
+  case clearkey
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum _CoreCollectorFactory {
+  public static func create(config: CoreCollector.AnalyticsConfig, defaultMetadata: CoreCollector.DefaultMetadata, client: any CoreCollector._Client = ClientFactory.createDefault(), oldConfig: CoreCollector.BitmovinAnalyticsConfig? = nil, licenseKeyProvider: (any CoreCollector.LicenseKeyProvider)? = nil) -> CoreCollector._CoreCollectorFactory.Dependencies
+  @_hasMissingDesignatedInitializers public class Dependencies {
+    final public let coreCollector: CoreCollector._CoreCollector
+    final public let adAnalytics: CoreCollector.BitmovinAdAnalytics?
+    final public let manipulatorPipeline: any CoreCollector.EventDataManipulatorPipeline
+    final public let sourceMetadataProvider: any CoreCollector._CurrentSourceMetadataProvider
+    final public let stateMachineFactory: CoreCollector.StateMachineFactory
+    @objc deinit
+  }
+}
+@available(*, deprecated, message: "Use AnalyticsConfig instead")
+@objc @objcMembers public class BitmovinAnalyticsConfig : ObjectiveC.NSObject {
+  @objc public var cdnProvider: Swift.String?
+  @objc public var customData1: Swift.String?
+  @objc public var customData2: Swift.String?
+  @objc public var customData3: Swift.String?
+  @objc public var customData4: Swift.String?
+  @objc public var customData5: Swift.String?
+  @objc public var customData6: Swift.String?
+  @objc public var customData7: Swift.String?
+  @objc public var customData8: Swift.String?
+  @objc public var customData9: Swift.String?
+  @objc public var customData10: Swift.String?
+  @objc public var customData11: Swift.String?
+  @objc public var customData12: Swift.String?
+  @objc public var customData13: Swift.String?
+  @objc public var customData14: Swift.String?
+  @objc public var customData15: Swift.String?
+  @objc public var customData16: Swift.String?
+  @objc public var customData17: Swift.String?
+  @objc public var customData18: Swift.String?
+  @objc public var customData19: Swift.String?
+  @objc public var customData20: Swift.String?
+  @objc public var customData21: Swift.String?
+  @objc public var customData22: Swift.String?
+  @objc public var customData23: Swift.String?
+  @objc public var customData24: Swift.String?
+  @objc public var customData25: Swift.String?
+  @objc public var customData26: Swift.String?
+  @objc public var customData27: Swift.String?
+  @objc public var customData28: Swift.String?
+  @objc public var customData29: Swift.String?
+  @objc public var customData30: Swift.String?
+  @objc public var customerUserId: Swift.String?
+  @objc public var experimentName: Swift.String?
+  @objc public var videoId: Swift.String?
+  @objc public var title: Swift.String?
+  @objc public var key: Swift.String
+  @objc public var playerKey: Swift.String
+  @objc public var path: Swift.String?
+  @objc public var isLive: Swift.Bool
+  @objc public var ads: Swift.Bool
+  @objc @available(*, deprecated, message: "No longer possible to change default value of 59700ms")
+  public var heartbeatInterval: Swift.Int
+  @objc public var randomizeUserId: Swift.Bool
+  @objc public var longTermRetryEnabled: Swift.Bool
+  @objc public init(key: Swift.String, playerKey: Swift.String)
+  @objc public init(key: Swift.String)
+  @objc deinit
+}
+public enum Util {
+  public static func timeIntervalToCMTime(_ timeInterval: Foundation.TimeInterval) -> CoreMedia.CMTime?
+  public static func streamType(from url: Swift.String) -> CoreCollector.StreamType?
+}
+extension Foundation.Date {
+  public var timeIntervalSince1970Millis: Swift.Int {
+    get
+  }
+}
+extension Swift.Double {
+  public var milliseconds: Swift.Int? {
+    get
+  }
+}
+public protocol EventDataManipulator {
+  func manipulate(eventData: CoreCollector.EventData) throws
+  func manipulateForAds(eventData: CoreCollector.EventData) throws
+}
+open class DefaultEventDataManipulator : CoreCollector.EventDataManipulator {
+  public init()
+  open func manipulate(eventData: CoreCollector.EventData) throws
+  open func manipulateForAds(eventData: CoreCollector.EventData) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class QualityChangeCounter {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class _CoreCollector {
+  final public let ssai: any CoreCollector.SsaiApi
+  @objc deinit
+}
+extension CoreCollector._CoreCollector {
+  public func attach(stateMachine: any CoreCollector.StateMachine, adapter: any CoreCollector.PlayerAdapter, adAdapter: (any CoreCollector.AdAdapter)?)
+  public func detach()
+  public func applyCustomData(customData: CoreCollector.CustomData, for source: Swift.AnyObject?)
+  public func sendCustomDataEvent(with customData: CoreCollector.CustomData)
+  public func apply(_ metadata: CoreCollector.SourceMetadata, for source: Swift.AnyObject?)
+  public func sourceMetadata(for source: Swift.AnyObject?) -> CoreCollector.SourceMetadata?
+  public var userId: Swift.String {
+    get
+  }
+  public var impressionId: Swift.String? {
+    get
+  }
+}
+public enum LicenseKeyState : Swift.Equatable {
+  case pending
+  case result(_: CoreCollector.LicenseKeyResult)
+  public static func == (a: CoreCollector.LicenseKeyState, b: CoreCollector.LicenseKeyState) -> Swift.Bool
+}
+public enum UserIdProviderFactory {
+  public static func create(randomizeUserId: Swift.Bool) -> any CoreCollector.UserIdProvider
+}
+public struct SpeedMeasurement {
+  public init()
+  public var downloadTime: Swift.Int
+  public var numberOfBytesTransferred: Swift.Int
+  public var numberOfSegmentsDownloaded: Swift.Int
+}
+extension CoreCollector.SpeedMeasurement {
+  public static func + (left: CoreCollector.SpeedMeasurement, right: CoreCollector.SpeedMeasurement) -> CoreCollector.SpeedMeasurement
+  public static func += (left: inout CoreCollector.SpeedMeasurement, right: CoreCollector.SpeedMeasurement)
+}
+public enum VideoStartFailedReason {
+  public static var pageClosed: Swift.String
+  public static var playerError: Swift.String
+  public static var timeout: Swift.String
+  public static var unknown: Swift.String
+}
+@_hasMissingDesignatedInitializers public class SsaiAdBreakStartEvent : CoreCollector._Event {
+  final public let name: Swift.String
+  final public let timestamp: Foundation.Date
+  final public let metadata: CoreCollector.SsaiAdBreakMetadata
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AdSample {
+  @objc deinit
+}
+public class _DefaultMetadataProvider {
+  final public let metadata: CoreCollector.DefaultMetadata
+  public init(_ metadata: CoreCollector.DefaultMetadata = DefaultMetadata())
+  @objc deinit
+}
+public protocol LicenseKeyReceiver : CoreCollector.LicenseKeyProvider {
+  func receive(result: CoreCollector.LicenseKeyResult)
+  func cancel()
+}
+public protocol CollectorFactory {
+  static var sdkVersion: Swift.String { get }
+}
+extension CoreCollector.CollectorFactory {
+  public static var sdkVersion: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class StateMachineFactory {
+  public func create(playerContext: any CoreCollector.PlayerContext) -> any CoreCollector.StateMachine
+  @objc deinit
+}
+public enum CastTech : Swift.String {
+  case airPlay
+  case googleCast
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class RebufferingTimeoutHandler {
+  @objc deinit
+}
+public class InstantLicenseKeyProvider : CoreCollector.LicenseKeyProvider {
+  final public let licenseKeyState: CoreCollector.LicenseKeyState
+  public init(licenseKey: Swift.String)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func waitForResult() async -> CoreCollector.LicenseKeyResult
+  #endif
+  @objc deinit
+}
+public class DeferredLicenseKeyHandler : CoreCollector.LicenseKeyProvider, CoreCollector.LicenseKeyReceiver {
+  @Combine.Published @_projectedValueProperty($licenseKeyState) public var licenseKeyState: CoreCollector.LicenseKeyState {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $licenseKeyState: Combine.Published<CoreCollector.LicenseKeyState>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init(timeout: Foundation.TimeInterval = 60.0)
+  public func receive(result: CoreCollector.LicenseKeyResult)
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor public func waitForResult() async -> CoreCollector.LicenseKeyResult
+  #endif
+  public func cancel()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AdEventData : Swift.Codable {
+  public func setEventData(eventData: CoreCollector.EventData)
+  public func setCustomData(customData: CoreCollector.CustomData)
+  public func setSsaiAdMetadata(adMetadata: CoreCollector.SsaiAdMetadata)
+  public func setSsaiAdBreakMetadata(adBreakMetadata: CoreCollector.SsaiAdBreakMetadata)
+  public func setAdBreak(adBreak: CoreCollector.AnalyticsAdBreak)
+  public func setAdSample(adSample: CoreCollector.AdSample)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public enum StreamType : Swift.String {
+  case progressive
+  case hls
+  case dash
+  case unknown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class BitmovinAdAnalytics {
+  @objc deinit
+}
+extension CoreCollector.BitmovinAdAnalytics {
+  public func onAdManifestLoaded(adBreak: CoreCollector.AnalyticsAdBreak, downloadTime: Foundation.TimeInterval)
+  public func onAdStarted(ad: CoreCollector.AnalyticsAd)
+  public func onAdFinished()
+  public func onAdBreakStarted(adBreak: CoreCollector.AnalyticsAdBreak)
+  public func onAdBreakFinished()
+  public func onAdClicked(clickThroughUrl: Swift.String?)
+  public func onAdSkipped()
+  public func onAdError(adBreak: CoreCollector.AnalyticsAdBreak, code: Swift.Int?, message: Swift.String?)
+  public func onAdQuartile(quartile: CoreCollector._CsaiAdQuartile)
+}
+@objc open class CorePlayerAdapter : ObjectiveC.NSObject {
+  public var stateMachine: any CoreCollector.StateMachine {
+    get
+  }
+  public init(stateMachine: any CoreCollector.StateMachine)
+  open func stopMonitoring()
+  public func destroy()
+  @objc deinit
+}
+@objc(BMASsaiAdQuartile) public enum SsaiAdQuartile : Swift.Int {
+  case first
+  case midpoint
+  case third
+  case completed
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum _CsaiAdQuartile {
+  case FIRST_QUARTILE
+  case MIDPOINT
+  case THIRD_QUARTILE
+  public static func == (a: CoreCollector._CsaiAdQuartile, b: CoreCollector._CsaiAdQuartile) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class AnalyticsAd {
+  public var isLinear: Swift.Bool
+  public var width: Swift.Int
+  public var height: Swift.Int
+  public var id: Swift.String?
+  public var mediaFileUrl: Swift.String?
+  public var clickThroughUrl: Swift.String?
+  public var bitrate: Swift.Int?
+  public var minBitrate: Swift.Int?
+  public var maxBitrate: Swift.Int?
+  public var mimeType: Swift.String?
+  public var adSystemName: Swift.String?
+  public var adSystemVersion: Swift.String?
+  public var advertiserName: Swift.String?
+  public var advertiserId: Swift.String?
+  public var apiFramework: Swift.String?
+  public var creativeAdId: Swift.String?
+  public var creativeId: Swift.String?
+  public var universalAdIdRegistry: Swift.String?
+  public var universalAdIdValue: Swift.String?
+  public var description: Swift.String?
+  public var minSuggestedDuration: Foundation.TimeInterval?
+  public var surveyUrl: Swift.String?
+  public var surveyType: Swift.String?
+  public var title: Swift.String?
+  public var wrapperAdsCount: Swift.Int?
+  public var codec: Swift.String?
+  public var pricingValue: Swift.Int?
+  public var pricingModel: Swift.String?
+  public var pricingCurrency: Swift.String?
+  public var skippableAfter: Foundation.TimeInterval?
+  public var skippable: Swift.Bool?
+  public var duration: Foundation.TimeInterval?
+  public var dealId: Swift.String?
+  public init()
+  @objc deinit
+}
+extension CoreCollector.SourceMetadata {
+  @_inheritsConvenienceInitializers @objc(BMASourceMetadataBuilder) @objcMembers public class Builder : ObjectiveC.NSObject {
+    @objc override dynamic public init()
+    @objc public func build() -> CoreCollector.SourceMetadata
+    @objc @discardableResult
+    public func withVideoId(_ value: Swift.String) -> Self
+    @objc @discardableResult
+    public func withTitle(_ value: Swift.String) -> Self
+    @objc @discardableResult
+    public func withPath(_ value: Swift.String) -> Self
+    @objc @discardableResult
+    public func withIsLive(_ value: Swift.Bool) -> Self
+    @objc @discardableResult
+    public func withCdnProvider(_ value: Swift.String) -> Self
+    @objc @discardableResult
+    public func withCustomData(_ value: CoreCollector.CustomData) -> Self
+    @objc deinit
+  }
+}
+public class ErrorData {
+  public init(code: Swift.Int?, message: Swift.String?, data: Swift.String?)
+  @objc deinit
+}
+extension CoreCollector.ErrorData : Swift.Equatable {
+  public static func == (lhs: CoreCollector.ErrorData, rhs: CoreCollector.ErrorData) -> Swift.Bool
+}
+extension CoreCollector.DefaultMetadata {
+  @_inheritsConvenienceInitializers @objc(BMADefaultMetadataBuilder) @objcMembers public class Builder : ObjectiveC.NSObject {
+    @objc override dynamic public init()
+    @objc public func build() -> CoreCollector.DefaultMetadata
+    @objc @discardableResult
+    public func withCdnProvider(_ value: Swift.String) -> Self
+    @objc @discardableResult
+    public func withCustomUserId(_ value: Swift.String) -> Self
+    @objc @discardableResult
+    public func withCustomData(_ value: CoreCollector.CustomData) -> Self
+    @objc deinit
+  }
+}
+public enum CodecUtils {
+  public static func isVideoCodec(_ codec: Swift.String) -> Swift.Bool
+  public static func isAudioCodec(_ codec: Swift.String) -> Swift.Bool
+}
+public protocol AdAdapter {
+  func releaseAdapter()
+  func getModuleInformation() -> CoreCollector.AdModuleInformation
+  func isAutoPlayEnabled() -> Swift.Bool?
+}
+public protocol _EventSubscriber {
+  func subscribe<T>(for timing: CoreCollector._EventTiming, eventType: T.Type) -> Combine.AnyPublisher<T, Swift.Never> where T : CoreCollector._Event
+}
+public struct CdnProvider {
+  public static let bitmovin: Swift.String
+  public static let akamai: Swift.String
+  public static let fastly: Swift.String
+  public static let maxcdn: Swift.String
+  public static let cloudfront: Swift.String
+  public static let chinacache: Swift.String
+  public static let bitgravity: Swift.String
+}
+extension CoreCollector.CustomData {
+  @nonobjc public func copy(customData1: Swift.String? = nil, customData2: Swift.String? = nil, customData3: Swift.String? = nil, customData4: Swift.String? = nil, customData5: Swift.String? = nil, customData6: Swift.String? = nil, customData7: Swift.String? = nil, customData8: Swift.String? = nil, customData9: Swift.String? = nil, customData10: Swift.String? = nil, customData11: Swift.String? = nil, customData12: Swift.String? = nil, customData13: Swift.String? = nil, customData14: Swift.String? = nil, customData15: Swift.String? = nil, customData16: Swift.String? = nil, customData17: Swift.String? = nil, customData18: Swift.String? = nil, customData19: Swift.String? = nil, customData20: Swift.String? = nil, customData21: Swift.String? = nil, customData22: Swift.String? = nil, customData23: Swift.String? = nil, customData24: Swift.String? = nil, customData25: Swift.String? = nil, customData26: Swift.String? = nil, customData27: Swift.String? = nil, customData28: Swift.String? = nil, customData29: Swift.String? = nil, customData30: Swift.String? = nil, experimentName: Swift.String? = nil) -> CoreCollector.CustomData
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+}
+extension CoreCollector.CustomData {
+  @_inheritsConvenienceInitializers @objc(BMACustomDataBuilder) @objcMembers public class Builder : ObjectiveC.NSObject {
+    @objc override dynamic public init()
+    @objc convenience public init(from customData: CoreCollector.CustomData)
+    @objc public func build() -> CoreCollector.CustomData
+    @objc @discardableResult
+    public func withExperimentName(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData1(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData2(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData3(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData4(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData5(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData6(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData7(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData8(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData9(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData10(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData11(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData12(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData13(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData14(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData15(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData16(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData17(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData18(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData19(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData20(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData21(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData22(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData23(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData24(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData25(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData26(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData27(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData28(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData29(_ value: Swift.String?) -> Self
+    @objc @discardableResult
+    public func withCustomData30(_ value: Swift.String?) -> Self
+    @objc deinit
+  }
+}
+public protocol SessionInfoProvider {
+  var impressionId: Swift.String { get }
+}
+extension CoreCollector.PlayerType : Swift.Equatable {}
+extension CoreCollector.PlayerType : Swift.Hashable {}
+extension CoreCollector.PlayerType : Swift.RawRepresentable {}
+extension CoreCollector._EventTiming : Swift.Equatable {}
+extension CoreCollector._EventTiming : Swift.Hashable {}
+extension CoreCollector.DeviceClass : Swift.Equatable {}
+extension CoreCollector.DeviceClass : Swift.Hashable {}
+extension CoreCollector.DeviceClass : Swift.RawRepresentable {}
+extension CoreCollector.AdPosition : Swift.Equatable {}
+extension CoreCollector.AdPosition : Swift.Hashable {}
+extension CoreCollector.AdPosition : Swift.RawRepresentable {}
+extension CoreCollector.RetryPolicy : Swift.Equatable {}
+extension CoreCollector.RetryPolicy : Swift.Hashable {}
+extension CoreCollector.RetryPolicy : Swift.RawRepresentable {}
+extension CoreCollector._CsaiAdTagType : Swift.Equatable {}
+extension CoreCollector._CsaiAdTagType : Swift.Hashable {}
+extension CoreCollector._CsaiAdTagType : Swift.RawRepresentable {}
+extension CoreCollector.PlayerState : Swift.Equatable {}
+extension CoreCollector.PlayerState : Swift.Hashable {}
+extension CoreCollector.PlayerState : Swift.RawRepresentable {}
+extension CoreCollector.DrmType : Swift.Equatable {}
+extension CoreCollector.DrmType : Swift.Hashable {}
+extension CoreCollector.DrmType : Swift.RawRepresentable {}
+extension CoreCollector.CastTech : Swift.Equatable {}
+extension CoreCollector.CastTech : Swift.Hashable {}
+extension CoreCollector.CastTech : Swift.RawRepresentable {}
+extension CoreCollector.StreamType : Swift.Equatable {}
+extension CoreCollector.StreamType : Swift.Hashable {}
+extension CoreCollector.StreamType : Swift.RawRepresentable {}
+extension CoreCollector.SsaiAdQuartile : Swift.Equatable {}
+extension CoreCollector.SsaiAdQuartile : Swift.Hashable {}
+extension CoreCollector.SsaiAdQuartile : Swift.RawRepresentable {}
+extension CoreCollector._CsaiAdQuartile : Swift.Equatable {}
+extension CoreCollector._CsaiAdQuartile : Swift.Hashable {}
